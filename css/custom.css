@@ -1,0 +1,88 @@
+h3 {
+    text-transform: none;  /* Prevents uppercase */
+    white-space: nowrap;   /*Keeps text on a single line*/
+}
+
+h3 {
+    text-transform: none;  /* Prevents uppercase */
+    white-space: nowrap;   /* Keeps text on a single line */
+    font-size: 2rem;       /* Default font size */
+}
+
+/* Small screens and below */
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.5rem;   /* Smaller font size for extra small screens */
+        white-space: normal; /* Allows text to wrap on smaller screens */
+    }
+}
+
+/* Medium screens and below */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.75rem;  /* Adjusted font size for small to medium screens */
+    }
+}
+
+/* Large screens and up */
+@media (min-width: 992px) {
+    h3 {
+        font-size: 2rem;     /* Default font size for larger screens */
+    }
+}
+
+
+
+
+.wrapper {
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  
+  .typing-demo {
+    width: auto;
+    max-width: 100%;
+    animation: typing 2s steps(25);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1em;
+    padding-top: 0;
+    color: black; /* Set text color to black */
+}
+  
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .typing-demo {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+    .static-text {
+        font-size: 0.8em; /* Ensure static text scales similarly */
+    }
+}
+
+
+
+
+.custom-element-wrapper.custom-element-8 {
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    width: 200%; /* Adjust as needed for larger size */
+    height: 130%; /* Maintain aspect ratio */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 77.2% 100%, 0 54%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77.2% 100%, 0 54%);
+}
+
+
+/* . */
+/* Optional: Ensure the container has sufficient size to accommodate the larger image */
