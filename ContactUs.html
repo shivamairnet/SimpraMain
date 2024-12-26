@@ -53,9 +53,8 @@
 
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
-
-		<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
 
 		<style>
 			.row {
@@ -574,7 +573,7 @@
 						</div>
 						<div class="row">
 							<div class="form-group col d-grid d-flex justify-content-center">
-								<input type="submit" onclick="sendForm()" value="Send Message" class="btn btn-Custom1 btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-2 px-5 font-weight-semibold" data-loading-text="Loading...">
+								<input type="submit" onclick="sendForm(event)" value="Send Message" class="btn btn-Custom1 btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-2 px-5 font-weight-semibold" data-loading-text="Loading...">
 							</div>
 						</div>
 					</form>
@@ -1059,36 +1058,48 @@ function consoleText(words, id, colors) {
 
 			<!-- testing contact-form -->
 			<script type="text/javascript">
-				emailjs.init("CW-Njv0Fhg1wZ97EB"); 
-			  
-				function sendForm() {
-					// Pre
+				emailjs.init("CW-Njv0Fhg1wZ97EB");
+			
+				function sendForm(event) {
+					// Prevent the default form submission
+					event.preventDefault();
+			
 					const form = document.getElementById('contact-form');
 					if (!form) {
 						console.error("Form element not found!");
 						return;
 					}
-			  
+			
+					// Perform form validation manually
+					if (!form.checkValidity()) {
+						console.error("Form validation failed.");
+						return;
+					}
+			
 					// Collect form data manually into a params object
 					const params = {
 						name: form.name.value,
-						message:form.message.value,
+						message: form.message.value,
 						email: form.email.value,
-					
+						
 						subject: form.subject.value,
-						// message: form.message.value,
 					};
-			  
+			
 					// Use EmailJS to send the params object
 					emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
-					// console.log(params)
 						.then(function(response) {
 							console.log("Success:", response);
 							console.log(params);
 							// Show success message
 							document.querySelector(".contact-form-success").classList.remove("d-none");
-						}, );
+						})
+						.catch(function(error) {
+							console.error("Error:", error);
+							// Show error message
+							document.querySelector(".contact-form-error").classList.remove("d-none");
+						});
 				}
-			  </script>
+			</script>
+			
 	</body>
 </html>
