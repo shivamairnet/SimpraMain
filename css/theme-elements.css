@@ -9358,8 +9358,8 @@ html.lightbox-opened.sticky-header-active #header .header-body {
 .list.list-icons.list-icons-lg.list-icons-style-2 li > [class*="fa-"]:first-child,
 .list.list-icons.list-icons-lg.list-icons-style-2 li > .icons:first-child, .list.list-icons.list-icons-lg.list-icons-style-2 li a:first-child > [class*="fa-"]:first-child,
 .list.list-icons.list-icons-lg.list-icons-style-2 li a:first-child > .icons:first-child {
-	width: 30px;
-	height: 30px;
+	width: 32px;
+	height: 35px;
 	padding: 4px;
 }
 

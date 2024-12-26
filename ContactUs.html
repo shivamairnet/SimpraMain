@@ -54,6 +54,9 @@
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 		<style>
 			.row {
 			  display: flex;
@@ -542,7 +545,7 @@
 					<h2 class="text-color-secondary font-weight-bold text-capitalize mb-2 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: #0C72B8 !important;">Send Us a Message</h2>
 					<p class="mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Have a question, feedback, or need assistance? Our team will get back to you promptly!</p>
 
-					<form class="contact-form custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/contact-form.php" method="POST">
+					<form class="contact-form custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" id="contact-form" method="POST">
 						<div class="contact-form-success alert alert-success d-none mt-4">
 							<strong>Success!</strong> Your message has been sent to us.
 						</div>
@@ -553,25 +556,25 @@
 						</div>
 						<div class="row">
 							<div class="form-group col-lg-6">
-								<input type="text"  placeholder="Your Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" style="height: 50px;" name="name" required>
+								<input type="text"  placeholder="Your Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" style="height: 50px;" name="name" id="name" required>
 							</div>
 							<div class="form-group col-lg-6">
-								<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address."  style="height: 50px;" data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
+								<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address."  style="height: 50px;" data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
 							</div>
 						</div>
 						<div class="row">
 							<div class="form-group col">
-								<input placeholder="Subject" type="text" value="" data-msg-required="Please enter the subject."  style="height: 50px;" maxlength="100" class="form-control" name="subject" required>
+								<input placeholder="Subject" type="text" value="" data-msg-required="Please enter the subject."  style="height: 50px;" maxlength="100" class="form-control" name="subject" id="subject" required>
 							</div>
 						</div>
 						<div class="row">
 							<div class="form-group col">
-								<textarea placeholder="Your Message..." maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" required></textarea>
+								<textarea placeholder="Your Message..." maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
 							</div>
 						</div>
 						<div class="row">
 							<div class="form-group col d-grid d-flex justify-content-center">
-								<input type="submit" value="Send Message" class="btn btn-Custom1 btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-2 px-5 font-weight-semibold" data-loading-text="Loading...">
+								<input type="submit" onclick="sendForm()" value="Send Message" class="btn btn-Custom1 btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-2 px-5 font-weight-semibold" data-loading-text="Loading...">
 							</div>
 						</div>
 					</form>
@@ -1053,5 +1056,39 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 		</script>
+
+			<!-- testing contact-form -->
+			<script type="text/javascript">
+				emailjs.init("CW-Njv0Fhg1wZ97EB"); 
+			  
+				function sendForm() {
+					// Pre
+					const form = document.getElementById('contact-form');
+					if (!form) {
+						console.error("Form element not found!");
+						return;
+					}
+			  
+					// Collect form data manually into a params object
+					const params = {
+						name: form.name.value,
+						message:form.message.value,
+						email: form.email.value,
+					
+						subject: form.subject.value,
+						// message: form.message.value,
+					};
+			  
+					// Use EmailJS to send the params object
+					emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
+					// console.log(params)
+						.then(function(response) {
+							console.log("Success:", response);
+							console.log(params);
+							// Show success message
+							document.querySelector(".contact-form-success").classList.remove("d-none");
+						}, );
+				}
+			  </script>
 	</body>
 </html>
