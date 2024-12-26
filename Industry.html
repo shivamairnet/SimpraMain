@@ -89,13 +89,19 @@
         .card-custom {
 			display: flex;
 			flex-direction: column;
+			justify-content: center !important;
 			align-items: center;
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             transition: box-shadow 0.3s ease;
-            height:220px;
+            height:225px;
             background-color: white;
+			width: 225px;
+            margin-top: 25px;
+			margin-bottom: 25px;
+
+			
             
         }
         .card-custom:hover {
@@ -125,8 +131,8 @@
 
 .filter-section {
   text-align: center;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .filter-buttons {
@@ -134,26 +140,30 @@
 }
 
 .filter-btn {
-  padding: 10px 20px;
-  width: 200px;
-  margin: 5px;
-  border: none;
+  padding: 10px 10px;
+  width: 195px;
+  margin: 15px;
+  border-bottom: 2px solid #007bff; /* Specify border style here */
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
-  border-radius: 15px;
-  font-size: 12px;
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: 13px;
   transition: background-color 0.3s ease;
+
 }
+
 
 .filter-btn.active {
   background-color: #fbbe55;
   color: black;
+  border-bottom: 2px solid #d5921e;
 }
 
 .filter-btn:hover {
   background-color: #fbbe55;
   color: black;
+  border-bottom: 2px solid #d5921e;
 }
 
 .image-container {
@@ -165,23 +175,121 @@
 }
 
 .image-box {
-  width: 318px;
-  height: 110px;
+  width: 180px;
+  height: 97px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   opacity: 0.4; /* Default faded look */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .image-box img {
-  object-fit: cover;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .image-box.highlight {
   opacity: 1; /* Highlighted look */
   transform: scale(1.05); /* Slight zoom effect */
+}
+
+@media(max-width:768px){
+	.desktop-clients{
+		display: none;
+	}
+
+	.mobile-clients{
+		display: block;
+	}
+	
+}
+
+@media(min-width:769px){
+	.mobile-clients{
+		display: none;
+	}
+
+	.desktop-clients{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        padding: 20px 10px !important;
+    }
+
+    .custom-row-footer {
+        flex-direction: column !important;
+    }
+
+    .custom-footer-column-logo {
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    .custom-footer-column-logo img {
+        margin: 0 auto !important;
+    }
+
+    .custom-footer-column-logo p {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .footer-column {
+        margin-top: 20px !important;
+    }
+
+    .custom-container-info-socials {
+        flex-direction: column !important;
+        align-items: center 
+		!important;
+    }
+
+    .footer-nav-phone,
+    .footer-nav-email {
+        flex-direction: column !important ;
+        text-align: center !important;
+    }
+
+    .footer-nav-phone span,
+    .footer-nav-email span {
+        padding: 5px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .nav-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-footer li {
+        margin: 5px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .footer-copyright a img {
+        margin: 10px 0;
+    }
 }
 
 
@@ -354,7 +462,7 @@
 							<a href="ContactUs.html"
 							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
 							style="height: 40px; width: 220px; background-color: transparent; border: 2px solid #020202; color: #040404; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
-								class="fas fa-arrow-right ms-2"></i></a>					
+								class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a>					
                                 <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
 		  
 							</div>
@@ -387,7 +495,7 @@
                         </div>										
                     </div>
                        <div class="container my-5">
-                        <div class="row">
+                        <div class="row" style="padding:50px auto">
                             <div class="col-md-3 mb-4">
                                 <div class="card card-custom " style="padding-bottom: 10px;">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-telecom.svg" class="card-img-top " alt="Image 1">
@@ -490,55 +598,55 @@
 							<button class="filter-btn active" data-category="transportation">Transportation</button>
 						</div>
 
-						<div class="image-container" style="margin-top: 55px;">
+						<div class="image-container" style="margin-top: 55px;padding: 0;margin: 0;">
 							<div data-category="wireless" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Air Pro.png" height="80px" width="260px"
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Air Pro.png" height="50px" width="60px"
 								 alt="">
 							</div>
 							<div data-category="bandwidth" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/antlabs.png" alt="" height="80px" width="190px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/antlabs.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="switches|storage-and-servers" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/hp.jpg" alt="" height="80px" width="200px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/hp.jpg" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="wireless" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/meraki.png" alt="" height="60px" width="200px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/meraki.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="transportation" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Cradlepoint-logo-full-color.png" alt="" height="80px" width="250px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Cradlepoint-logo-full-color.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="switches|wireless" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Cisco-logo.png" alt="" height="80px" width="180px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Cisco-logo.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="wireless" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Aruba_Networks-Logo.wine.png" alt="" height="100px" width="200px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Aruba_Networks-Logo.wine.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="switches" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/allied-telesis-logo.png" alt="" height="100px" width="190px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/allied-telesis-logo.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="ip-telephones" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Alcatel_logo_2016.png" alt="" height="80px" width="320px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Alcatel_logo_2016.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="ip-telephones|storage-and-servers|switches" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Huawei-Logo-2006.png" alt="" height="100px" width="180px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Huawei-Logo-2006.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="load-balancer" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Elfiq.png" alt="" height="95px" width="270px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Elfiq.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="digital-signage" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/mcoms Logo.png" alt="" height="70px" width="270px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/mcoms Logo.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="ip-telephones" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/NEC_logo.png" alt="" height="70px" width="240px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/NEC_logo.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="transportation|load-balancer" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/peplink.png" alt="" height="100px" width="200px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/peplink.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="wireless" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Ruckus_logo_black-orange.png.png" alt="" height="80px" width="230px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Ruckus_logo_black-orange.png.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="digital-signage" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/triploplay.jpg" alt="" height="80px" width="200px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/triploplay.jpg" alt="" height="50px" width="60px">
 							</div>
 
 						</div>
@@ -546,7 +654,7 @@
 					</section>
 				
 				<!-- our clients -->
-					<section class="section border-0 bg-light m-0 mb-2">
+					<section class="desktop-clients section border-0 bg-light m-0 mb-2">
 						<div class="container py-4">
 							<div class="row justify-content-center">
 								<div class="col col-lg-9 text-center">
@@ -611,6 +719,38 @@
 							</div>
 						</div>
 					</section>
+
+					<div class="mobile-clients clients-carousel-wrapper mt-5">
+						<div class="clients-carousel">
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ADNOC Client.png" alt="ADNOC" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Dutech Client.png" alt="Dutech" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Golden Tulip Client.png" alt="Golden" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/IHG Client.png" alt="IHG" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/MIllennium Client.png" alt="MIllennium" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Novotel Client.png" alt="Novotel" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Oman Tel Client.png" alt="Oman" class="img-fluid" />
+						  </div>
+						  <div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ooredoo Client.png" alt="ooredoo" class="img-fluid" />
+						  </div>
+						</div>
+					  </div>
 
                 <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
 					<div class="container py-5">

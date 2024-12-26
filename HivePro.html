@@ -728,58 +728,84 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
   }
 
   .benefits-section .book {
-    width: 100%; /* Make each card take full width */
+    width: 80%; /* Make each card take full width */
     text-align: center; /* Center align content */
   }
 }
 
-@media (max-width: 768px) {
-  #footer {
-    text-align: center !important;
-    padding: 20px 10px !important; /* Add padding for better spacing on mobile */
-  }
+@media only screen and (max-width: 768px) {
+    #footer {
+        padding: 20px 10px !important;
+    }
 
-  #footer .footer-column {
-    margin-bottom: 20px !important; /* Space between columns on mobile */
-  }
+    .custom-row-footer {
+        flex-direction: column !important;
+    }
 
-  #footer .footer-column img {
-    margin: 0 auto !important; /* Center the logo */
-    display: block !important; /* Ensures proper centering */
-  }
+    .custom-footer-column-logo {
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
 
-  #footer .footer-column p {
-    margin: 0 auto !important;
-    text-align: center !important;
-  }
+    .custom-footer-column-logo img {
+        margin: 0 auto !important;
+    }
 
-  #footer .custom-container-info-socials {
-    flex-direction: column !important; /* Stack elements vertically */
-    align-items: center !important;
-  }
+    .custom-footer-column-logo p {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
 
-  #footer .footer-nav-phone,
-  #footer .footer-nav-email {
-    justify-content: center !important;
-    text-align: center !important;
-  }
+    .footer-column {
+        margin-top: 20px !important;
+    }
 
-  #footer .footer-nav-phone span,
-  #footer .footer-nav-email span {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 5px 0 !important;
-  }
+    .custom-container-info-socials {
+        flex-direction: column !important;
+        align-items: center 
+		!important;
+    }
 
+    .footer-nav-phone,
+    .footer-nav-email {
+        flex-direction: column !important ;
+        text-align: center !important;
+    }
 
-  #footer .social-icons {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 10px !important; /* Space between icons */
-  }
+    .footer-nav-phone span,
+    .footer-nav-email span {
+        padding: 5px 0;
+    }
 
+    .social-icons {
+        justify-content: center;
+    }
 
+    .nav-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-footer li {
+        margin: 5px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .footer-copyright a img {
+        margin: 10px 0;
+    }
 }
 
 
@@ -951,7 +977,7 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 							<a href="ContactUs.html"
 							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
 							style="height: 40px; width: 220px; background-color: transparent; border: 2px solid black; color: black; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
-								class="fas fa-arrow-right ms-2"></i></a>                               <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
+								class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a>                               <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
 		  
 							</div>
 						</div>
@@ -1023,7 +1049,7 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 				<!-- zigzag section -->
 				<div class="row align-items-center mb-5 ml-5 mr-5 container" style="margin:30px auto !important;padding: 0 auto !important;">
 					<div class="col-lg-6 order-lg-1 text-lg-left text-center pl-lg-5 mt-3">
-						<h2 class="text-color-dark font-weight-medium text-8 mb-4 ml-4"><strong>Hive - Leading The Future
+						<h2 class="text-color-dark font-weight-medium text-8 mb-4"><strong>Hive - Leading The Future
 						</strong></h2>
 						<p class="text-3-5 line-height-8 mb-4">
 							Designed to facilitate connectivity, and streamline operations, HIVE is a unified platform that enables customers, vendors, and partners to deploy, manage, migrate, and monitor Spectrami Security Solutions seamlessly through a single interface.
