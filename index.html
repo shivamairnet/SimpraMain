@@ -357,6 +357,54 @@
     }
 }
 
+@media(max-width:768px){
+	.client-desktop{
+		display: none !important;
+	}
+
+	.carousel-horizontal .carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.carousel-horizontal .carousel-item {
+    flex: 0 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1;
+}
+
+.client-mobile{
+	height: 350px !important;
+}
+
+.carousel-item {
+    padding-bottom: 0 !important;
+}
+
+.carousel-item .row {
+    margin-bottom: 0 !important;
+}
+
+.carousel-item .col-sm-4, .carousel-item .col-lg-2 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+}
+
+@media(min-width:769px){
+	.client-mobile{
+		display:none !important;
+	}
+
+	
+
+}
+
+
 
 
 		  </style>
@@ -708,7 +756,7 @@
 				</section>
 
 		<!-- our clients -->
-		<section class="section border-0 bg-light m-0 mb-2">
+		<section class="client-desktop section border-0 bg-light m-0 mb-2">
 			<div class="container py-4">
 				<div class="row justify-content-center">
 					<div class="col col-lg-9 text-center">
@@ -773,6 +821,106 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- our clients -->
+		<!-- Our Clients -->
+<section class="client-mobile section border-0 bg-light m-0 mb-2">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col col-lg-9 text-center">
+
+                <div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+                    <hr class="bg-primary border-radius m-auto">
+                </div>
+                <div class="overflow-hidden mb-1">
+                    <h3 class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Client logos carousel in row -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-12">
+                <div id="clientsCarousel" class="carousel slide carousel-horizontal" data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <!-- First Row -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center justify-content-start">
+                                <div class="col-sm-4 col-lg-2 mb-3">
+                                    <img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png" alt="ADNOC" class="img-fluid" style="max-width: 90px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png" alt="Dutech" class="img-fluid" style="max-width: 140px;">
+								</div> 
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+								<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png" alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+								</div>
+                               
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG" class="img-fluid" style="max-width: 100px;">
+								</div>
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+								<div class="col-sm-4 col-lg-2 mb-3">
+                                    <img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+                                </div>
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+                                <div class="col-sm-4 col-lg-2 mb-3">
+                                    <img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png" alt="Novotel" class="img-fluid" style="max-width: 140px;">
+                                </div>
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+                                <div class="col-sm-4 col-lg-2 mb-3">
+                                    <img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png" alt="Oman" class="img-fluid" style="max-width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <div class="row align-items-center justify-content-start">
+                                <div class="col-sm-4 col-lg-2 mb-3">
+                                    <img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png" alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 				<section class="section border-0 bg-quaternary m-0">
 					<div class="container py-0">

@@ -141,7 +141,8 @@
     width: 1000px;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+	align-items: center;
     /* margin-left: 60px; */
     /* margin-right: 30px; */
     color: black;
@@ -397,6 +398,14 @@
     }
 }
 
+/* @media(max-width:768px)
+{
+	.vision-cards{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	}
+} */
 		</style>
 	</head>
 	<body>
@@ -590,7 +599,7 @@
 								<div class="container containercard ms-0 ms-lg-5">
 									<div class="row justify-content-center"> <!-- Center the cards -->
 										<!-- Vision Card -->
-										<div class="col-lg-4 col-md-6 col-sm-10"> <!-- Add d-flex and justify-content-center to center the card -->
+										<div class="vision-cards col-lg-4 col-md-6 col-sm-10"> <!-- Add d-flex and justify-content-center to center the card -->
 											<div class="card">
 												<div class="face face1">
 													<div class="content">
