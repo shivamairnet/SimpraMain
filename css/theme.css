@@ -1532,6 +1532,8 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 
 	#header .header-nav-main nav > ul > li > a.dropdown-toggle .fa-chevron-down {
 		/* display: none; */
+		margin-left:4px ;
+		
 	}
 
 	#header .header-nav-main nav > ul > li > a.active {

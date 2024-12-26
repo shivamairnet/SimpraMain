@@ -140,14 +140,15 @@
 }
 
 .filter-btn {
+  background: linear-gradient(90deg, #9abff8, #b1e0f8);
   padding: 10px 10px;
-  width: 195px;
+  width: 198px;
   margin: 15px;
-  border-bottom: 2px solid #007bff; /* Specify border style here */
   cursor: pointer;
-  background-color: #ffffff;
-  color: #007bff;
+  /* background-color: #ffffff; */
+  color: black;
   border-radius: 5px;
+  font-weight: 600;
   font-size: 13px;
   transition: background-color 0.3s ease;
 
@@ -155,15 +156,15 @@
 
 
 .filter-btn.active {
-  background-color: #fbbe55;
+  background-color: #fff;
   color: black;
-  border-bottom: 2px solid #d5921e;
+  border: 2px solid #005ce6;
 }
 
 .filter-btn:hover {
-  background-color: #fbbe55;
+  background-color: #fff;
   color: black;
-  border-bottom: 2px solid #d5921e;
+  border-bottom: 2px solid #007bff;
 }
 
 .image-container {
@@ -196,26 +197,26 @@
   transform: scale(1.05); /* Slight zoom effect */
 }
 
-@media(max-width:768px){
+/* @media(max-width:768px){
 	.desktop-clients{
 		display: none;
 	}
 
 	.mobile-clients{
-		display: block;
+		display: block !important;
 	}
 	
-}
+} */
 
-@media(min-width:769px){
+/* @media(min-width:769px){
 	.mobile-clients{
 		display: none;
 	}
 
 	.desktop-clients{
-		display: block;
+		display: block !important;
 	}
-}
+} */
 
 @media only screen and (max-width: 768px) {
     #footer {
@@ -289,6 +290,32 @@
 
     .footer-copyright a img {
         margin: 10px 0;
+    }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 767px) {
+    .industry-cards-section .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Centering Cards on Mobile */
+    .industry-cards-section .col-md-3 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Center Titles on Mobile */
+    .industry-cards-section h2 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .industry-cards-section h5.card-title {
+        font-size: 1rem !important;
+        text-align: center !important;
     }
 }
 
@@ -471,7 +498,7 @@
 					</section>
 
                 
-                <section class="bg-color-light" style="margin-bottom: -44px;">
+                <section class="industry-cards-section bg-color-light" style="margin-bottom: -44px;">
                        <!-- card section -->
                        <div class="container pt-4 pb-5 mb-5">
                         <div class="row">
@@ -655,7 +682,7 @@
 				
 				<!-- our clients -->
 					<section class="desktop-clients section border-0 bg-light m-0 mb-2">
-						<div class="container py-4">
+						<div class="container py-4" style="height: 250px;">
 							<div class="row justify-content-center">
 								<div class="col col-lg-9 text-center">
 	
