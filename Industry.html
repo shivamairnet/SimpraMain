@@ -140,14 +140,15 @@
 }
 
 .filter-btn {
-  background: linear-gradient(90deg, #9abff8, #b1e0f8);
-  padding: 10px 10px;
-  width: 198px;
-  margin: 15px;
+  /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
+  padding: 10px 5px;
+  /* width: 198px; */
+  margin: 4px;
   cursor: pointer;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   color: black;
   border-radius: 5px;
+  border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
   font-weight: 600;
   font-size: 13px;
   transition: background-color 0.3s ease;
@@ -195,6 +196,37 @@
 .image-box.highlight {
   opacity: 1; /* Highlighted look */
   transform: scale(1.05); /* Slight zoom effect */
+}
+
+@media(max-width:768px){
+
+	.image-container {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.image-box {
+width: 120px;
+height: 50px;
+overflow: hidden;
+/* border-radius: 10px; */
+background-color: #fff;
+/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+opacity: 0.4;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-box img {
+object-fit: contain;
+width: 100%;
+height: 100%;
+}
+
+
+
 }
 
 /* @media(max-width:768px){
@@ -664,16 +696,16 @@
 								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Huawei-Logo-2006.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="load-balancer" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Elfiq.png" alt="" height="50px" width="60px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Elfiq.png" alt="" height="40px" width="50px">
 							</div>
 							<div data-category="digital-signage" class="image-box">
 								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/mcoms Logo.png" alt="" height="50px" width="60px">
 							</div>
 							<div data-category="ip-telephones" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/NEC_logo.png" alt="" height="50px" width="60px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/NEC_logo.png" alt="" height="40px" width="50px">
 							</div>
 							<div data-category="transportation|load-balancer" class="image-box">
-								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/peplink.png" alt="" height="50px" width="60px">
+								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/peplink.png" alt="" height="40px" width="50px">
 							</div>
 							<div data-category="wireless" class="image-box">
 								<img src="img/MainWebsiteImages/Our Industires Page Icons/Simpra International Website (Iindustry Page) Partners/Simpra International Website (Iindustry Page) Partners/Ruckus_logo_black-orange.png.png" alt="" height="50px" width="60px">
