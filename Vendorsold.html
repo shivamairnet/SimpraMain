@@ -55,7 +55,14 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 		<style>
-		
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 .custom-container {
   display: flex;
@@ -392,20 +399,21 @@ background-color: #007bff;
 			<div role="main" class="main">
 
 
-				<section style="
+				<section class="bg-color-quaternary" style="
 				position: relative; 
-				background-color: #ffffff;
-                height: 420px;  
+				background-color: #ffffff; 
 				padding: 50px ;  
-				width: 100%;
-				background-image: url('img/MainWebsiteImages/Simpra International Header Images/Vendors Header Image_11zon.png'); 
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+				background-repeat: no-repeat;
+				width: 100%; /* Adjust the width as needed */
+    			height: 100%; /* Adjust the height as needed */
+				background-image: url('img/MainWebsiteImages/Simpra International Header Images/Vendors Header Image_11zon.png'); /* Replace with the path to your image */
+					background-size: cover; /* Ensures the image covers the entire section */
+					background-position: center; /* Centers the image */
+					background-repeat: no-repeat;
 				;
-			"class="bg-color-quaternary" >		
+			">		
 			<div class="container">
-				<div class="row py-4">
+				<div class="row py-5">
 					<div style="
 				display: flex; 
 				flex-direction: column; 
@@ -414,14 +422,13 @@ background-color: #007bff;
 				text-align: center; 
 				flex: 0 0 100%; 
 				order: 2;
-				margin-top: 100px;
+				margin-top: 40px;
 				max-width: 100%; /* Ensures full width on small screens */
 			">
-				<h1 class="d-flex justify-content-center" style="
+				<h1 class="d-flex justify-content-center text-9" style="
 				color: white; 	
 				font-weight: bold; 
 				margin: 0; 
-                font-size: 36px;
 				padding: 0; 
 				line-height: 1.2;
 				text-align: center; /* Centered on smaller screens */
@@ -439,10 +446,9 @@ background-color: #007bff;
 							</div>
 						</div>
 					</div>
-					</section>
+				</section>
 
-                
-                    <div class="custom-container m-auto">
+					<div class="custom-container m-auto">
 						<div class="row justify-content-center">
 							<div class="col-12  col-lg-4 pr-ms-3">
 							<div class="custom-card">
@@ -800,56 +806,17 @@ background-color: #007bff;
 						</div>
 					</div>
 
-
-                    <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
-                        <div class="container py-5">
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="300">
-                                        <div class="feature-box-icon bg-transparent">
-                                            <i class="icons icon-phone text-6 text-color-light"></i>
-                                        </div>
-                                        <div class="feature-box-info line-height-2 ps-1">
-                                            <span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
-                                            <strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
-                                        </div>
-                                    </div>
-                                    <h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <div class="border-top border-color-light-5 text-light pt-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-        
-                                        <div class="row align-items-center">
-                                            <div class="col-12 mb-3 mb-lg-0 col-lg">
-                                                <h2 class="text-color-light font-weight-bold text-4 mb-0">Request a Call Back</h2>
-                                            </div>
-                                            <div class="col-12 mb-3 mb-lg-0 col-lg">
-                                                <input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Subject" aria-label="Subject">
-                                            </div>
-                                            <div class="col-12 mb-3 mb-lg-0 col-lg">
-                                                <input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Full Name" aria-label="Full Name">
-                                            </div>
-                                            <div class="col-12 mb-3 mb-lg-0 col-lg">
-                                                <input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Phone Number" aria-label="Phone Number">
-                                            </div>
-                                            <div class="col-12 mb-3 mb-lg-0 col-lg">
-                                                <div class="d-grid gap-2 d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+			</section>
 
 
-				
-				<!-- <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
+				<!-- pointers section
+				  -->
+				  
+                
+               
+
+
+                <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
 					<div class="container py-5">
 						<div class="row justify-content-center">
 							<div class="col">
@@ -859,7 +826,7 @@ background-color: #007bff;
 									</div>
 									<div class="feature-box-info line-height-2 ps-1">
 										<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
-										<strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">97143948809</a></strong>
+										<strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
 									</div>
 								</div>
 								<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
@@ -871,7 +838,7 @@ background-color: #007bff;
 	
 									<div class="row align-items-center">
 										<div class="col-12 mb-3 mb-lg-0 col-lg">
-											<h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back</h2>
+											<h2 class="text-color-light font-weight-bold text-4 mb-0">Request a Call Back</h2>
 										</div>
 										<div class="col-12 mb-3 mb-lg-0 col-lg">
 											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Subject" aria-label="Subject">
@@ -883,7 +850,7 @@ background-color: #007bff;
 											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Phone Number" aria-label="Phone Number">
 										</div>
 										<div class="col-12 mb-3 mb-lg-0 col-lg">
-											<div class="d-grid gap-2">
+											<div class="d-grid gap-2 d-flex justify-content-center">
 												<a href="#" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
 											</div>
 										</div>
@@ -893,63 +860,66 @@ background-color: #007bff;
 							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
+
+				
+
+
+			
 			</div>
 
 			<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
 				<div class="container">
 					<div class="row py-5 custom-row-footer">
-						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
-							<img width="120" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer" style="margin-bottom: 10px;">
-							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
+						<div
+							class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
+							<img width="120" height="100"
+								src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer"
+								style="margin-bottom: 10px;">
+							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods
+								Wholesalers,</br>
 								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
-							
-								</p>
+	
+							</p>
 						</div>
-						<div class="col-12 col-sm-12 col-lg-9 footer-column" >
-							<div class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
-								<div class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
+						<div class="col-12 col-sm-12 col-lg-9 footer-column">
+							<div
+								class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
+								<div
+									class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
 									<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
 										<li class="nav-item d-inline-flex flex-column flex-lg-row">
-											<span class="pl-1 footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
+											<span
+												class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
 												<span style="padding: 10px;">
-													<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-													<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="tel:123-456-7890">+971 4394 8736 </a>
+													<img width="15" height="18"
+														src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+														<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none"
+															href="tel:123-456-7890">+971 4394 8736 </a>
 												</span>
 											</span>
-											<span class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
+											<span
+												class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
 												<span style="padding: 10px;">
-													<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
-													<a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a>
+													<img width="25" height="18"
+														src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
+														<a
+															class="text-color-secondary text-color-hover-primary text-decoration-none">info@sfgw.ae</a>
 												</span>
 											</span>
 											<!-- <span class="footer-nav-opening-hours px-0 font-weight-normal d-flex align-items-center text-color-secondary justify-content-start mb-2 mb-lg-0">
-												<span>
-													<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
-												</span>
-												Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
-											</span> -->
+													<span>
+														<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
+													</span>
+													Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
+												</span> -->
 										</li>
 									</ul>
 									<ul class="social-icons custom-social-icons" style="padding: 10px;">
-										<!-- <li class="social-icons-instagram">
-											<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
-												<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
-											</a>
-										</li>
-										<li class="social-icons-twitter">
-											<a class="custom-bg-color-light-grey" href="http://www.twitter.com/" target="_blank" title="Twitter">
-												<i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
-											</a>
-										</li>
-										<li class="social-icons-facebook">
-											<a class="custom-bg-color-light-grey" href="http://www.facebook.com/" target="_blank" title="Facebook">
-												<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
-											</a>
-										</li> -->
+										
 										<li class="social-icons-linkedin">
-											<a class="custom-bg-color-light-grey" href="https://www.linkedin.com/company/simprafoodsae/" target="_blank" title="LinkedIn">
-												<i class="fab fa-linkedin text-5 font-weight-semibold text-color-secondary"></i>
+											<a class=" bg-color-dark" href="https://www.linkedin.com/company/simprafoodsae/" target="_blank" title="LinkedIn">
+												<i class="fab fa-linkedin text-4 font-weight-normal text-color-light"></i>
 											</a>
 										</li>
 										
@@ -958,58 +928,70 @@ background-color: #007bff;
 								<nav class="nav-footer w-100 d-none d-lg-block">
 									<ul class="nav nav-pills justify-content-end" id="mainNav">
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Home.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="Home.html">
 												Home
 											</a>
 										</li>
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="About Us.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="About Us.html">
 												About Us
 											</a>
 										</li>
-										
+	
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="HivePro.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="HivePro.html">
 												Products
 											</a>
 										</li>
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="ICTSolutions.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="ICTSolutions.html">
 												Offerings
 											</a>
 										</li>
 										<!-- <li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="Clients.html">
 												Our Clients
 											</a>
 										</li> -->
-                                        <li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Vendors.html">
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="Vendors.html">
 												Vendors
 											</a>
 										</li>
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Industry.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="Industry.html">
 												Industry
 											</a>
 										</li>
-					
+										<!-- <li class="dropdown-secondary">
+												<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
+													Others
+												</a>
+											</li> -->
 										<li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="ContactUs.html">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+												href="ContactUs.html">
 												Contact Us
 											</a>
 										</li>
-										
+	
 										<!-- <li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-blog.html">
-												Blog
-											</a>
-										</li> -->
+												<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-blog.html">
+													Blog
+												</a>
+											</li> -->
 										<!-- <li class="dropdown-secondary">
-											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Contact-us.html">
-												Contact Us
-											</a>
-										</li> -->
+												<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Contact-us.html">
+													Contact Us
+												</a>
+											</li> -->
 									</ul>
 								</nav>
 							</div>
@@ -1020,9 +1002,10 @@ background-color: #007bff;
 					<div class="row">
 						<div class="col-lg-12 text-center m-0" style="color:black">
 							<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
-							<span>Developed By : 
+							<span>Developed By :
 								<a href="https://ascentialabs.com/" style="color: #0C72B8;">
-									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Ascentia Logo (1).png" alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Ascentia Logo (1).png"
+										alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
 								</a>
 							</span>
 						</div>
@@ -1085,7 +1068,5 @@ background-color: #007bff;
 				typePhrase('typing-demo', ['ICT Solutions,', 'Cyber Security,', 'Communications'], 100, 100);
 			};
 		</script>
-
-	
 	</body>
 </html>

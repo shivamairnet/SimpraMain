@@ -9273,7 +9273,7 @@ html.lightbox-opened.sticky-header-active #header .header-body {
 .list.list-icons.list-icons-style-2 li > [class*="fa-"]:first-child,
 .list.list-icons.list-icons-style-2 li > .icons:first-child, .list.list-icons.list-icons-style-2 li a:first-child > [class*="fa-"]:first-child,
 .list.list-icons.list-icons-style-2 li a:first-child > .icons:first-child {
-	border-width: 1px;
+	/* border-width: 1px;
 	border-style: solid;
 	border-radius: 50%;
 	width: 25px;
@@ -9281,7 +9281,7 @@ html.lightbox-opened.sticky-header-active #header .header-body {
 	text-align: center;
 	padding: 4px;
 	font-size: 0.8em;
-	line-height: 1.3;
+	line-height: 1.3; */
 }
 
 .list.list-icons.list-icons-style-3 li {
