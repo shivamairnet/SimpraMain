@@ -410,7 +410,11 @@
 	}
 
 	.first-section{
-		height: 400px;
+		height: 400px !important;
+	}
+	.first-section-text{
+		margin-top: -15px !important;
+		padding-top: 0px !important;
 	}
 }
 
@@ -546,7 +550,7 @@
 							<div class="col">
 								<div class="row pt-5 mt-5 mb-5 pb-5">
 									
-									<div class="col-12 col-md-6 col-lg-6  p-relative pt-5 mt-5 order-2 order-lg-1 ">
+									<div class="first-section-text col-12 col-md-6 col-lg-6  p-relative pt-5 mt-5 order-2 order-lg-1 ">
 										<div class="overflow-hidden mt-5 mt-lg-0 mb-1 divider-custom text-center text-lg-left">
 											<h2 class="divider-custom font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0 appear-animation ml-lg-4" data-appear-animation="maskUp" data-appear-animation-delay="100">Innovating Tomorrow</h2>
 										</div>
@@ -1024,7 +1028,7 @@
 									</div>
 									<div class="col-12 mb-3 mb-lg-0 col-lg">
 										<div class="d-grid gap-2 d-flex justify-content-center justify-content-end">
-											<a href="#" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
+											<a href="#" id="whatsappRedirect" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
 										</div>
 									</div>
 								</div>
@@ -1275,6 +1279,25 @@
 
 
 		</script>
+
+<script>
+    document.getElementById('whatsappRedirect').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get form input values
+        const subject = document.querySelector('[placeholder="Subject"]').value;
+        const fullName = document.querySelector('[placeholder="Full Name"]').value;
+        const phoneNumber = document.querySelector('[placeholder="Phone Number"]').value;
+
+        // Format WhatsApp URL
+        const phone = "97143948736"; // Replace with your WhatsApp number in international format (without +)
+        const message = `Hello, I would like to request a call back.\n\nSubject: ${encodeURIComponent(subject)}\nFull Name: ${encodeURIComponent(fullName)}\nPhone Number: ${encodeURIComponent(phoneNumber)}`;
+        const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
+    });
+</script>
 
 	</body>
 </html>

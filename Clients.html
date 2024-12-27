@@ -1090,5 +1090,23 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 		</script>
+		<script>
+			document.getElementById('whatsappRedirect').addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent default link behavior
+		
+				// Get form input values
+				const subject = document.querySelector('[placeholder="Subject"]').value;
+				const fullName = document.querySelector('[placeholder="Full Name"]').value;
+				const phoneNumber = document.querySelector('[placeholder="Phone Number"]').value;
+		
+				// Format WhatsApp URL
+				const phone = "97143948736"; // Replace with your WhatsApp number in international format (without +)
+				const message = `Hello, I would like to request a call back.\n\nSubject: ${encodeURIComponent(subject)}\nFull Name: ${encodeURIComponent(fullName)}\nPhone Number: ${encodeURIComponent(phoneNumber)}`;
+				const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+		
+				// Redirect to WhatsApp
+				window.open(whatsappURL, '_blank');
+			});
+		</script>
 	</body>
 </html>

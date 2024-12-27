@@ -84,6 +84,20 @@
   opacity:0;
 }
 
+@media (max-width: 768px) {
+  .card-custom-container {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center horizontally */
+    gap: 20px; /* Add spacing between cards */
+    width: 100%; /* Ensure container spans full width */
+  }
+
+  .card-custom {
+    width: 80%; /* Adjust card width for responsiveness */
+    margin: 0 auto; /* Center card horizontally */
+  }
+}
 
 
         .card-custom {
@@ -197,6 +211,8 @@
   opacity: 1; /* Highlighted look */
   transform: scale(1.05); /* Slight zoom effect */
 }
+
+
 
 @media(max-width:768px){
 
@@ -516,7 +532,7 @@ height: 100%;
 				text-align: center; 
 				flex: 0 0 100%; 
 				order: 2;
-				margin-top: 100px;
+				margin-top: 85px;
 				max-width: 100%; /* Ensures full width on small screens */
 			">
 				<h1 class="d-flex justify-content-center" style="
@@ -559,7 +575,7 @@ height: 100%;
                             </div>
                         </div>										
                     </div>
-                       <div class="container my-5">
+                       <div class="card-custom-container container my-5">
                         <div class="row" style="padding:50px auto">
                             <div class="col-md-3 mb-4">
                                 <div class="card card-custom " style="padding-bottom: 10px;">
@@ -852,7 +868,7 @@ height: 100%;
 										</div>
 										<div class="col-12 mb-3 mb-lg-0 col-lg">
 											<div class="d-grid gap-2 d-flex justify-content-center">
-												<a href="#" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
+												<a href="#" id="whatsappRedirect" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
 											</div>
 										</div>
 									</div>
@@ -1278,6 +1294,25 @@ height: 100%;
 	// Trigger the "All" button on page load
 	document.querySelector(".filter-btn[data-category='all']").click();
 	</script>
+
+<script>
+    document.getElementById('whatsappRedirect').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get form input values
+        const subject = document.querySelector('[placeholder="Subject"]').value;
+        const fullName = document.querySelector('[placeholder="Full Name"]').value;
+        const phoneNumber = document.querySelector('[placeholder="Phone Number"]').value;
+
+        // Format WhatsApp URL
+        const phone = "97143948736"; // Replace with your WhatsApp number in international format (without +)
+        const message = `Hello, I would like to request a call back.\n\nSubject: ${encodeURIComponent(subject)}\nFull Name: ${encodeURIComponent(fullName)}\nPhone Number: ${encodeURIComponent(phoneNumber)}`;
+        const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
+    });
+</script>
 	
 	</body>
 </html>
