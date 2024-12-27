@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Simpra</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img\MainWebsiteImages\Home Page\Simpra International Logo.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img\MainWebsiteImages\Home Page\Simpra International Logo.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- carousel links -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-business-consulting-4.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-4.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+		<style>
+			.row {
+			  display: flex;
+			}
+			.card {
+			  display: flex;
+			  flex-direction: column;
+			  height: 100%;
+			}
+			.card-body {
+			  flex: 1;
+			}
+
+			.logo-text-container {
+             display: flex;
+             align-items: center; /* Align items vertically in the center */
+            }
+
+            .logo-text {
+            margin-left: 0.5px; /* Adjust the space between the image and text */
+            font-size: 1.5em; /* Adjust font size as needed */
+            font-weight: bold;
+			margin-right: 20px; /* Optional: make the text bold */
+             }
+
+			 /* animated text */
+			 /* .animated-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  animation: caret 0.5s step-end infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes erasing {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+.typing {
+  animation: typing 2s steps(20) 1s 1 normal both, erasing 2s steps(20) 5s 1 normal both;
+} */
+
+/* animation on text classes for styling */
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:2.5em;
+  text-align:center;
+  height:50px;
+  width:400px;
+  display:block;
+  position:absolute;
+  color:#0052CC;
+  top: 33px;;
+  bottom:0;
+  left: 142px;;
+  right:0;
+  margin:auto;
+  margin-top: 200px;
+  
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+/* animation on cards */
+.containercardbody{
+	
+    /* margin: 0; */
+    /* padding: 0; */
+    /* min-height: 100vh; */
+    background: #333;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-family: consolas; */
+
+}
+
+.containercard{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+	margin-left: 60px;
+	margin-right: 60px;
+	color: black;
+	
+}
+
+.containercard .card{
+    position: relative;
+    cursor: pointer;
+	background-color: #333;
+	color: black !important;
+	border-color: #333;
+}
+
+.containercard .containercardbodyblock{
+	height: 400px;
+}
+
+.containercard .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+	color: black !important;
+	background-color: white;
+}
+
+.containercard .card .face.face1{
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+	color: black !important;
+}
+
+.containercard .card:hover .face.face1{
+    background:#0052CC;
+    transform: translateY(0);
+}
+
+.containercard .card .face.face1 .content{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.containercard .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.containercard .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.containercard .card:hover .face.face1 .content img{
+	filter: invert(1) brightness(2) grayscale(1);
+}
+.containercard .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+.containercard .card:hover .face.face1 .content h3{
+    /* margin: 10px 0 0; */
+    /* padding: 0; */
+    color: white;
+    /* text-align: center; */
+    /* font-size: 1.5em; */
+}
+
+.containercard .card .face.face2{
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
+    transform: translateY(-100px);
+}
+
+.containercard .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.containercard .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.containercard .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: gray;
+	font-size: large;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.containercard .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+/* .white-fill {
+  filter: brightness(2) invert(1);
+} */
+
+/* Card hover effect */
+.card-our-services-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-our-services-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:768px){
+
+	.address{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        padding: 20px 10px !important;
+    }
+
+    .custom-row-footer {
+        flex-direction: column !important;
+    }
+
+    .custom-footer-column-logo {
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    .custom-footer-column-logo img {
+        margin: 0 auto !important;
+    }
+
+    .custom-footer-column-logo p {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .footer-column {
+        margin-top: 20px !important;
+    }
+
+    .custom-container-info-socials {
+        flex-direction: column !important;
+        align-items: center 
+		!important;
+    }
+
+    .footer-nav-phone,
+    .footer-nav-email {
+        flex-direction: column !important ;
+        text-align: center !important;
+    }
+
+    .footer-nav-phone span,
+    .footer-nav-email span {
+        padding: 5px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .nav-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-footer li {
+        margin: 5px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .footer-copyright a img {
+        margin: 10px 0;
+    }
+}
+
+@media(max-width:992px){
+	.header-nav-features{
+		display: none;
+	}
+}
+
+@media(max-width:992px){
+    .header-desktop-tablet{
+        display: none !important;
+    }
+}
+
+@media(min-width:993px){
+    .header-mobile{
+        display: none !important;
+    }
+
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="body" style="font-family: Calibri, Arial, sans-serif;">
+			<header id="header" class="header-transparent header-desktop-tablet"
+			data-plugin-options="{'stickyEnabled': , 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': , 'stickyChangeLogo': false, 'stickyStartAt': 53, 'stickySetTop': '-53px'};">
+			<div class="header-body border-top-0 h-auto box-shadow-none">
+				<div class="header-container header-container-height-sm container p-static">
+					<div class="header-row">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo">
+									<a href="index.html" class="logo-text-container">
+										<img alt="Porto" width="70" height="65"
+											src="img/newimg/simpra-logo-transparent-1.png">
+										<span class="logo-text">Simpra</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<div class="header-nav header-nav-links">
+									<div
+										class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-border-radius header-nav-main-text-capitalize header-nav-main-text-size-4 header-nav-main-arrows header-nav-main-full-width-mega-menu header-nav-main-mega-menu-bg-hover header-nav-main-effect-2">
+										<nav class="collapse">
+											<ul class="nav nav-pills" id="mainNav">
+												<li class="dropdown">
+													<a href="index.html" class="nav-link">
+														Home
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="About Us.html">
+														About Us
+													</a>
+												</li>
+												<li class="dropdown">
+													<a class="nav-link dropdown-toggle" href="#">
+														Our Products
+													</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a href="HivePro.html" class="dropdown-item">Hive Pro</a>
+														</li>
+														<li>
+															<a href="Altro Smart.html" class="dropdown-item">Altro
+																Smart</a>
+														</li>
+
+													</ul>
+												</li>
+												<li class="dropdown">
+													<a class="dropdown-item dropdown-toggle" href="#">
+
+														Our Offerings
+
+													</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a href="ICTSolutions.html" class="dropdown-item">ICT
+																Solutions</a>
+														</li>
+														<li>
+															<a href="Communications.html"
+																class="dropdown-item">Communications</a>
+														</li>
+														<li>
+															<a href="CyberSecurity.html" class="dropdown-item">Cyber
+																Security</a>
+														</li>
+														<li>
+															<a href="NewGen.html" class="dropdown-item">New Gen</a>
+														</li>
+													</ul>
+												</li>
+												<!-- <li>
+													<a class="nav-link" href="Clients.html">
+														Our Clients
+													</a>
+
+												</li> -->
+												<li>
+													<a class="nav-link " href="Vendors.html">
+														Vendors
+													</a>
+												</li>
+												<li>
+													<a class="nav-link " href="Industry.html">
+														Industry
+													</a>
+												</li>
+												<li>
+													<a class="nav-link active" href="ContactUs.html">
+														Contact Us
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+									data-bs-target=".header-nav-main nav">
+									<i class="fas fa-bars"></i>
+								</button>
+								<div class="header-nav-features header-nav-features-no-border ps-2 order-1 order-lg-2">
+									<div class="header-nav-feature header-nav-features-search d-inline-flex">
+										<a href="#" class="header-nav-features-toggle text-decoration-none"
+											data-focus="headerSearch" aria-label="Search"><i
+												class="fas fa-search header-nav-top-icon text-3"></i></a>
+										<div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
+											<form role="search" action="page-search-results.html" method="get">
+												<div class="simple-search input-group">
+													<input class="form-control text-1" id="headerSearch" name="q"
+														type="search" value="" placeholder="Search...">
+													<button class="btn" type="submit" aria-label="Search">
+														<i class="fas fa-search header-nav-top-icon"></i>
+													</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+        <header id="header" class="header-transparent header-mobile"
+        data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
+        <div class="header-body header-body-bottom-border border-top-0 h-auto">
+            <div class="header-container container p-static" style="height: 70px;">
+                <div class="header-row" style="height: 70px; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Logo Section -->
+                    <div class="header-logo">
+                        <a href="home.html">
+                            <img src="img/BuzzBoost Home Page Images/BuzzBoost Logo.png" 
+                                style="width: 160px; height: 50px;" 
+                                alt="BuzzBoost" />
+                        </a>
+                    </div>
+    
+                    <!-- Sidebar Toggle Button -->
+                    <button class="btn header-btn-collapse-nav"
+                        style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; gap: 8px;"
+                        onclick="toggleSidebar()">
+                        <i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
+                    </button>
+    
+                    <!-- Sidebar Navigation -->
+                    <div id="sidebarMenu"
+                        style="position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background: black; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
+                        <button onclick="toggleSidebar()" style="float: right; border: none; background: none; font-size: 1.25em; cursor: pointer; color: white;">&times;</button>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
+                            <li class="list-hover">
+                                <a href="home.html" class="nav-link active"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-home" style="margin-right: 10px;"></i> Home
+                                </a>
+                            </li>
+                            <li class="list-hover">
+                                <a href="aboutus.html" class="nav-link"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-info-circle" style="margin-right: 10px;"></i> About Us
+                                </a>
+                            </li>
+                            <li class="list-hover dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-box" style="margin-right: 10px;"></i> Our Products
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: black; margin: 10px 0; padding: 0; list-style: none;">
+                                    <li><a href="HivePro.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">Hive Pro</a></li>
+                                    <li><a href="Altro Smart.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">Altro Smart</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-hover dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-tags" style="margin-right: 10px;"></i> Our Offerings
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: black; margin: 10px 0; padding: 0; list-style: none;">
+                                    <li><a href="ICTSolutions.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">ICT Solutions</a></li>
+                                    <li><a href="Communications.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">Communications</a></li>
+                                    <li><a href="CyberSecurity.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">Cyber Security</a></li>
+                                    <li><a href="NewGen.html" class="dropdown-item" style="color: #fff; padding: 10px; display: block;">New Gen</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-hover">
+                                <a href="Vendors.html" class="nav-link"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-handshake" style="margin-right: 10px;"></i> Vendors
+                                </a>
+                            </li>
+                            <li class="list-hover">
+                                <a href="Industry.html" class="nav-link"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-industry" style="margin-right: 10px;"></i> Industry
+                                </a>
+                            </li>
+                            <li class="list-hover">
+                                <a href="ContactUs.html" class="nav-link active"
+                                    style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
+                                    <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Background Overlay -->
+                    <div id="sidebarOverlay"
+                        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1040; display: none;"
+                        onclick="toggleSidebar()"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+	<script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebarMenu');
+            const overlay = document.getElementById('sidebarOverlay');
+            if (sidebar.style.transform === 'translateX(250px)') {
+                sidebar.style.transform = 'translateX(-250px)';
+                overlay.style.display = 'none';
+            } else {
+                sidebar.style.transform = 'translateX(250px)';
+                overlay.style.display = 'block';
+            }
+        }
+    </script>
+
+			<div role="main" class="main">
+
+
+				<section style="
+				position: relative; 
+				background-color: #ffffff; 
+				padding: 50px ;  
+				width: 100%; /* Adjust the width as needed */
+				;
+			"class="bg-color-quaternary" >		
+			<div class="container">
+				<div class="row py-5">
+					<div style="
+				display: flex; 
+				flex-direction: column; 
+				align-items: center; 
+				padding: 0; 
+				text-align: center; 
+				flex: 0 0 100%; 
+				order: 2;
+				margin-top: 40px;
+				max-width: 100%; /* Ensures full width on small screens */
+			">
+				<h1 class="d-flex justify-content-center text-9 mb-5" style="
+				color: #0b0b0b; 	
+				font-weight: bold; 
+				margin: 0; 
+				padding: 0; 
+				line-height: 1.2;
+				text-align: center; /* Centered on smaller screens */
+				width: 100%;">Contact Us</h1>
+								
+							<a href="ContactUs.html"
+							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
+							style="height: 40px; width: 220px; background-color: transparent; border: 2px solid #020202; color: #040404; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
+								class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a>					
+                                <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
+		  
+							</div>
+						</div>
+					</div>
+					</section>
+				
+
+		<!-- ContactUs -->
+		<section class="custom-bg-color-lighter-grey">
+			<div class="cards custom-cards h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+				<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
+					<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
+						<div class="card border-radius-0 border-0 shadow-none">
+							<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
+								<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Get In Touch</h4>
+
+								<strong class="d-block text-secondary text-4">Work Inquiries</strong>
+								<p class="d-block m-0">+971 4 394 8736</p>
+
+								<strong class="d-block text-secondary text-4 pt-4">Careers & Press</strong>
+								<p class="d-block m-0">+971 50 953 5327</p>
+
+								<!-- <strong class="d-block text-secondary text-4 pt-4">Assistance Hours:</strong>
+								<p class="d-block m-0">Mon - Sat 9:00am - 6:00pm</p>
+								<p class="d-block m-0">Sunday - CLOSED</p> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
+						<div class="card border-radius-0 border-0 shadow-none">
+							<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
+								<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Address and Mail</h4>
+
+								<strong class="d-block text-secondary text-4">Address</strong>
+								<p class="address d-block m-0 text-center">Simpra Foods Goods Wholesalers, Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT,     PO Box 391935, Dubai-UAE.
+								</p>
+
+								<strong class="d-block text-secondary text-4 pt-4">E-mail</strong>
+								<p class="d-block m-0">
+									<a class="text-default" href="mailto:business@portotheme.com">info@sfgw.ae</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
+						<div class="card border-radius-0 border-0 shadow-none">
+							<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
+								<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Social Media
+								<ul class="social-icons custom-social-icons p-0 pt-3 m-0 text-center">
+									<!-- <li class="m-0 d-block pb-2 social-icons-instagram">
+										<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
+											<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
+										</a>
+									</li>
+									<li class="m-0 d-block pb-2 social-icons-twitter">
+										<a class="custom-bg-color-light-grey" href="http://www.twitter.com/" target="_blank" title="Twitter">
+											<i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
+										</a>
+									</li>
+									<li class="m-0 d-block pb-2 social-icons-facebook">
+										<a class="custom-bg-color-light-grey" href="http://www.facebook.com/" target="_blank" title="Facebook">
+											<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
+										</a>
+									</li> -->
+									<li class="social-icons-linkedin">
+										<a class="custom-bg-color-light-grey" href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+											<i class="fab fa-linkedin text-4 font-weight-semibold text-color-secondary"></i>
+										</a>
+									</li>
+								</ul>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container py-5 mt-5">
+			<div class="row pb-2 mb-4">
+				<div class="col">
+					<div class="d-flex align-items-center mb-2">
+						<span class="custom-line appear-animation" data-appear-animation="customLineAnimation" appear-animation-duration="1s"></span>
+						<div class="overflow-hidden ms-3">
+							<h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="1000">GET IN TOUCH</h2>
+						</div>
+					</div>
+					<h3 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Send Us a Message</h3>
+				</div>
+			</div>
+			<div class="row pb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+				<div class="col">
+					<form class="contact-form custom-form-style-1" id="contact-form" method="POST">
+						<div class="contact-form-success alert alert-success d-none mt-4">
+							<strong>Success!</strong> Your message has been sent to us.
+						</div>
+
+						<div class="contact-form-error alert alert-danger d-none mt-4">
+							<strong>Error!</strong> There was an error sending your message.
+							<span class="mail-error-message text-1 d-block"></span>
+						</div>
+
+						<div class="row row-gutter-sm">
+							<div class="form-group col-lg-6 mb-4">
+								<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Name">
+							</div>
+							<div class="form-group col-lg-6 mb-4">
+								<input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" required placeholder="Phone Number">
+							</div>
+						</div>
+						<div class="row row-gutter-sm">
+							<div class="form-group col-lg-6 mb-4">
+								<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Your Email">
+							</div>
+							<div class="form-group col-lg-6 mb-4">
+								<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="Subject">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col mb-4" style="padding-left: 10px;padding-right: 10px;">
+								<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" placeholder="Your Message"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col mb-0 d-flex justify-content-center">
+								<button type="submit" onclick="sendForm(event)" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">SEND MESSAGE</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+                
+               
+
+
+                <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
+					<div class="container py-5">
+						<div class="row justify-content-center">
+							<div class="col">
+								<div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="300">
+									<div class="feature-box-icon bg-transparent">
+										<i class="icons icon-phone text-6 text-color-light"></i>
+									</div>
+									<div class="feature-box-info line-height-2 ps-1">
+										<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
+										<strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
+									</div>
+								</div>
+								<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col">
+								<div class="border-top border-color-light-5 text-light pt-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+	
+									<div class="row align-items-center">
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back</h2>
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Subject" aria-label="Subject">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Full Name" aria-label="Full Name">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Phone Number" aria-label="Phone Number">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<div class="d-grid gap-2 d-flex justify-content-center">
+												<a href="#" id="whatsappRedirect" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
+											</div>
+										</div>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+
+				<!-- <section class="section border-0 bg-quaternary m-0">
+					<div class="container py-5">
+						<div class="row justify-content-center">
+							<div class="col col-lg-9 text-center">
+
+								<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+									<hr class="bg-primary border-radius m-auto">
+								</div>
+								<div class="overflow-hidden mb-1">
+									<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">What They Say About Us</h3>
+								</div>
+								<h2 class="text-color-dark font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Testimonials</h2>
+
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+
+								<div class="owl-carousel owl-theme stage-margin rounded-nav nav-dark nav-icon-1 nav-size-md mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 2}}, 'margin': 0, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
+									<div class="mx-3">
+										<div class="testimonial testimonial-style-3 testimonial-style-3-light">
+											<blockquote class="p-3 before-d-none">
+												<p class="font-weight-medium text-4 line-height-5 p-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.</p>
+											</blockquote>
+											<div class="testimonial-arrow-down p-relative z-index-1"></div>
+											<div class="testimonial-author">
+												<div class="testimonial-author-thumbnail">
+													<img src="img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<p><strong class="font-weight-extra-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+											</div>
+										</div>
+									</div>
+									<div class="mx-3">
+										<div class="testimonial testimonial-style-3 testimonial-style-3-light">
+											<blockquote class="p-3 before-d-none">
+												<p class="font-weight-medium text-4 line-height-5 p-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.</p>
+											</blockquote>
+											<div class="testimonial-arrow-down p-relative z-index-1"></div>
+											<div class="testimonial-author">
+												<div class="testimonial-author-thumbnail">
+													<img src="img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<p><strong class="font-weight-extra-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+											</div>
+										</div>
+									</div>
+									<div class="mx-3">
+										<div class="testimonial testimonial-style-3 testimonial-style-3-light">
+											<blockquote class="p-3 before-d-none">
+												<p class="font-weight-medium text-4 line-height-5 p-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.</p>
+											</blockquote>
+											<div class="testimonial-arrow-down p-relative z-index-1"></div>
+											<div class="testimonial-author">
+												<div class="testimonial-author-thumbnail">
+													<img src="img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<p><strong class="font-weight-extra-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</section> -->
+				<!-- <div class="container pt-5 mt-3 pb-0">
+					<div class="row">
+						<div class="col">
+							<p class="font-weight-medium text-4-5 line-height-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum eleifend eros a pharetra. Cras aliquam vestibulum vehicula. Sed sed lectus risus. Vestibulum maximus ac purus in euismod. In venenatis tellus ante, id porta risus semper quis. Aenean vel posuere urna, sit amet placerat massa. Quisque efficitur interdum libero, sed dictum lorem euismod sed.</p>
+							<p class="text-3-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum eleifend eros a pharetra. Cras aliquam vestibulum vehicula. Sed sed lectus risus. Vestibulum maximus ac purus in euismod. In venenatis tellus ante, id porta risus semper quis. Aenean vel posuere urna, sit amet placerat massa. Quisque efficitur interdum libero, sed dictum lorem euismod sed.</p>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <section class="section border-0 bg-light m-0 mb-2">
+					<div class="container py-4">
+						<div class="row justify-content-center">
+							<div class="col col-lg-9 text-center">
+
+								<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+									<hr class="bg-primary border-radius m-auto">
+								</div>
+								<div class="overflow-hidden mb-1">
+									<h3 class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+								</div>
+								
+
+							</div>
+						</div>
+						<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
+							<div class="carousel-inner text-center">
+								<div class="carousel-item active">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png" alt="ADNOC" class="img-fluid" style="max-width: 90px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png" alt="Dutech" class="img-fluid" style="max-width: 140px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png" alt="Golden" class="img-fluid" style="max-width: 140px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG" class="img-fluid" style="max-width: 100px;">
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row align-items-center justify-content-center">
+										
+										<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png" alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png" alt="Novotel" class="img-fluid" style="max-width: 140px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png" alt="Oman" class="img-fluid" style="max-width: 100px;">
+										</div>
+										<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+											<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png" alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</section> -->
+
+				<!-- <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
+					<div class="container py-5">
+						<div class="row justify-content-center">
+							<div class="col">
+								<div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="300">
+									<div class="feature-box-icon bg-transparent">
+										<i class="icons icon-phone text-6 text-color-light"></i>
+									</div>
+									<div class="feature-box-info line-height-2 ps-1">
+										<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
+										<strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">97143948809</a></strong>
+									</div>
+								</div>
+								<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col">
+								<div class="border-top border-color-light-5 text-light pt-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+	
+									<div class="row align-items-center">
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back</h2>
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Subject" aria-label="Subject">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Full Name" aria-label="Full Name">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0" placeholder="Phone Number" aria-label="Phone Number">
+										</div>
+										<div class="col-12 mb-3 mb-lg-0 col-lg">
+											<div class="d-grid gap-2">
+												<a href="#" class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms" >Submit <i class="fas fa-arrow-right ms-2"></i></a>
+											</div>
+										</div>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+			</div>
+
+			<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
+				<div class="container">
+					<div class="row py-5 custom-row-footer">
+						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
+							<img width="130" height="110" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer" style="margin-bottom: 10px;">
+							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
+								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
+							
+								</p>
+						</div>
+						<div class="col-12 col-sm-12 col-lg-9 footer-column" >
+							<div class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
+								<div class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
+									<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
+										<li class="nav-item d-inline-flex flex-column flex-lg-row">
+											<span class="pl-1 footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
+												<span style="padding: 10px;">
+													<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+													<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="tel:123-456-7890">+971 4394 8736 </a>
+												</span>
+											</span>
+											<span class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
+												<span style="padding: 10px;">
+													<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
+													<a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a>
+												</span>
+											</span>
+											<!-- <span class="footer-nav-opening-hours px-0 font-weight-normal d-flex align-items-center text-color-secondary justify-content-start mb-2 mb-lg-0">
+												<span>
+													<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
+												</span>
+												Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
+											</span> -->
+										</li>
+									</ul>
+									<ul class="social-icons custom-social-icons" style="padding: 10px;">
+										<!-- <li class="social-icons-instagram">
+											<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
+												<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
+											</a>
+										</li>
+										<li class="social-icons-twitter">
+											<a class="custom-bg-color-light-grey" href="http://www.twitter.com/" target="_blank" title="Twitter">
+												<i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
+											</a>
+										</li>
+										<li class="social-icons-facebook">
+											<a class="custom-bg-color-light-grey" href="http://www.facebook.com/" target="_blank" title="Facebook">
+												<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
+											</a>
+										</li> -->
+										<li class="social-icons-linkedin">
+											<a class="custom-bg-color-light-grey" href="https://www.linkedin.com/company/simprafoodsae/" target="_blank" title="LinkedIn">
+												<i class="fab fa-linkedin text-5 font-weight-semibold text-color-secondary"></i>
+											</a>
+										</li>
+										
+									</ul>
+								</div>
+								<nav class="nav-footer w-100 d-none d-lg-block">
+									<ul class="nav nav-pills justify-content-end" id="mainNav">
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Home.html">
+												Home
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="About Us.html">
+												About Us
+											</a>
+										</li>
+										
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="HivePro.html">
+												Products
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="ICTSolutions.html">
+												Offerings
+											</a>
+										</li>
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
+												Our Clients
+											</a>
+										</li> -->
+                                        <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Vendors.html">
+												Vendors
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Industry.html">
+												Industry
+											</a>
+										</li>
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
+												Others
+											</a>
+										</li> -->
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="ContactUs.html">
+												Contact Us
+											</a>
+										</li>
+										
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-blog.html">
+												Blog
+											</a>
+										</li> -->
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Contact-us.html">
+												Contact Us
+											</a>
+										</li> -->
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright container bg-color-quaternary">
+					<div class="row">
+						<div class="col-lg-12 text-center m-0" style="color:black">
+							<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
+							<span>Developed By : 
+								<a href="https://ascentialabs.com/" style="color: #0C72B8;">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Ascentia Logo (1).png" alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
+								</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+		<script src="vendor/particles/particles.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-business-consulting-4.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+
+		<script>
+// 			const texts = ["ICT Solutions", "Cyber Security", "Communications"];
+// let currentIndex = 0;
+// const animatedText = document.getElementById("animated-text");
+
+// function typeAndEraseText() {
+//   animatedText.textContent = texts[currentIndex];
+//   animatedText.classList.remove('typing');
+//   void animatedText.offsetWidth; 
+//   animatedText.classList.add('typing');
+
+//   currentIndex = (currentIndex + 1) % texts.length;
+// }
+
+
+// typeAndEraseText();
+
+
+// setInterval(typeAndEraseText, 5000);
+
+
+// function([string1, string2],target id,[color1,color2])    
+consoleText(['ICT Solutions', 'Cyber Security', 'Communications'], 'text',['black','black','black']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+		</script>
+
+			<!-- testing contact-form -->
+			<script type="text/javascript">
+				emailjs.init("CW-Njv0Fhg1wZ97EB");
+			
+				function sendForm(event) {
+					// Prevent the default form submission
+					event.preventDefault();
+			
+					const form = document.getElementById('contact-form');
+					if (!form) {
+						console.error("Form element not found!");
+						return;
+					}
+			
+					// Perform form validation manually
+					if (!form.checkValidity()) {
+						console.error("Form validation failed.");
+						return;
+					}
+			
+					// Collect form data manually into a params object
+					const params = {
+						name: form.name.value,
+						message: form.message.value,
+						email: form.email.value,
+						phone: form.phone.value,
+						subject: form.subject.value,
+					};
+			
+					// Use EmailJS to send the params object
+					emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
+						.then(function(response) {
+							console.log("Success:", response);
+							console.log(params);
+							// Show success message
+							document.querySelector(".contact-form-success").classList.remove("d-none");
+						})
+						.catch(function(error) {
+							console.error("Error:", error);
+							// Show error message
+							document.querySelector(".contact-form-error").classList.remove("d-none");
+						});
+				}
+			</script>
+
+<script>
+    document.getElementById('whatsappRedirect').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get form input values
+        const subject = document.querySelector('[placeholder="Subject"]').value;
+        const fullName = document.querySelector('[placeholder="Full Name"]').value;
+        const phoneNumber = document.querySelector('[placeholder="Phone Number"]').value;
+
+        // Format WhatsApp URL
+        const phone = "97143948736"; // Replace with your WhatsApp number in international format (without +)
+        const message = `Hello, I would like to request a call back.\n\nSubject: ${encodeURIComponent(subject)}\nFull Name: ${encodeURIComponent(fullName)}\nPhone Number: ${encodeURIComponent(phoneNumber)}`;
+        const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
+    });
+</script>
+			
+	</body>
+</html>
