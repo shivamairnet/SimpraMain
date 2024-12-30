@@ -854,6 +854,45 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
       margin: 10px;
     }
 
+	/* Tablet Screen Media Query */
+/* Tablet Screen Media Query */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .benefits-section {
+    margin: 20px auto !important;
+    padding: 0 15px !important;
+  }
+
+  .benefits-section .d-flex {
+    flex-direction: row; /* Keep the row layout */
+    gap: 20px; /* Reduce the gap between cards */
+    justify-content: space-around; /* Spread cards evenly */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .benefits-section .book {
+    width: 70%; /* Shrink card width for better fit */
+    max-width: 280px; /* Optional: Limit the maximum width */
+    text-align: center; /* Center-align content inside cards */
+  }
+
+  .benefits-section .book ul {
+    font-size: 14px; /* Reduce font size for the list */
+    padding: 5px;
+    line-height: 1.3; /* Adjust line height for readability */
+  }
+
+  .benefits-section .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+ 
+}
+
+
+
 		</style>
 	</head>
 	<body>
