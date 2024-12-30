@@ -84,7 +84,7 @@
   opacity:0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .card-custom-container {
     display: flex;
     flex-direction: column; /* Stack items in a column */
@@ -99,6 +99,34 @@
   }
 }
 
+/* Responsive Styles for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-custom-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple rows */
+    justify-content: space-between; /* Space cards evenly */
+    align-items: center; /* Align items vertically */
+    width: 100% !important; /* Full container width */
+    gap: 10px; /* Spacing between cards */
+  }
+
+  .card-custom {
+    flex: 70% !important; /* Set width for 4 cards in a row */
+    height:195px !important;
+	width: 160px !important;
+  }
+
+  /* Center Titles on Tablet */
+  .industry-cards-section h2 {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+
+  .industry-cards-section h5.card-title {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+  }
+}
 
         .card-custom {
 			display: flex;
@@ -109,9 +137,9 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             transition: box-shadow 0.3s ease;
-            height:225px;
+            height:210px;
             background-color: white;
-			width: 225px;
+			width: 210px;
             margin-top: 25px;
 			margin-bottom: 25px;
 
@@ -157,14 +185,14 @@
   /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
   padding: 10px 5px;
   /* width: 198px; */
-  margin: 4px;
+  margin: 1px;
   cursor: pointer;
   background-color: #ffffff;
   color: black;
   border-radius: 5px;
   border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 11px;
   transition: background-color 0.3s ease;
 
 }
@@ -369,6 +397,36 @@ height: 100%;
         text-align: center !important;
     }
 }
+
+/* Responsive Styles for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .industry-cards-section .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Adjusting Cards for 4 Columns on Tablet */
+    .industry-cards-section .col-md-3 {
+        flex: 0 0 22% !important; /* Adjust for 4 cards in a row with spacing */
+        max-width: 22% !important;
+        margin: 1% !important; /* Adds spacing between cards */
+    }
+
+    /* Center Titles on Tablet */
+    .industry-cards-section h2 {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .industry-cards-section h5.card-title {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+}
+
 
 @media(max-width:992px){
 	.header-nav-features{
@@ -614,7 +672,7 @@ height: 100%;
                                 <div class="card card-custom " style="padding-bottom: 10px;">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-telecom.svg" class="card-img-top " alt="Image 1">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;">Telecom</h5>
+                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Telecom</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -623,7 +681,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industires-automobile.svg" class="card-img-top" alt="Image 2">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6;font-weight: 600 !important;">Automobile</h5>
+                                        <h5 class="card-title" style="color: #005ce6;font-weight: 600 !important;margin-top: -25px;">Automobile</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -632,7 +690,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-finance.svg" class="card-img-top" alt="Image 3">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;">Finance</h5>
+                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Finance</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -641,7 +699,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-technology.svg" class="card-img-top" alt="Image 4">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;">Technology</h5>
+                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Technology</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -653,7 +711,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-governemnt-institutions.svg" class="card-img-top" alt="Image 5">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;">Government And Institutions</h5>
+                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Government And Institutions</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -662,7 +720,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industires-retail.svg" class="card-img-top" alt="Image 6">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;">Retail</h5>
+                                        <h5 class="card-title" style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Retail</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -671,7 +729,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-ecommerce.svg" class="card-img-top" alt="Image 7">
                                     <div class="card-body">
-                                        <h5 class="card-title"style="color: #005ce6; font-weight: 600 !important;">Ecommerce</h5>
+                                        <h5 class="card-title"style="color: #005ce6; font-weight: 600 !important;margin-top: -25px;">Ecommerce</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -680,7 +738,7 @@ height: 100%;
                                 <div class="card card-custom">
                                     <img src="img\MainWebsiteImages\Our Industires Page Icons\our-industries-oil-gas.svg" class="card-img-top" alt="Image 8">
                                     <div class="card-body">
-                                        <h5 class="card-title" style="color: #005ce6;font-weight: 600 !important;">Oil And Gas</h5>
+                                        <h5 class="card-title" style="color: #005ce6;font-weight: 600 !important;margin-top: -25px;">Oil And Gas</h5>
                                         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                                     </div>
                                 </div>
@@ -1146,7 +1204,7 @@ height: 100%;
 				<div class="container">
 					<div class="row py-5 custom-row-footer">
 						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
-							<img width="120" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer" style="margin-bottom: 10px;">
+							<img width="100" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer" style="margin-bottom: 10px;">
 							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
 								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
 							
