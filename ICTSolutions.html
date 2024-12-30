@@ -411,6 +411,29 @@ color: #fff;
 margin: 15px 0;
 }
 
+/* Remove scaling effect on mobile screens */
+@media (max-width: 768px) {
+    .carousel__container:hover .carousel-item {
+        opacity: 1; /* Ensure all items remain fully visible */
+        transform: none; /* Remove scaling effect */
+    }
+
+    .carousel-item:hover ~ .carousel-item {
+        transform: none; /* Disable translation effect */
+    }
+
+    .carousel__container:hover .carousel-item:hover {
+        transform: none; /* Disable scaling on hover */
+    }
+
+	.carousel-item{
+		margin-top: 15px !important;
+		margin-right: 0px !important;
+		height: 220px !important;
+	}
+}
+
+
 @media only screen and (max-width: 768px) {
     #footer {
         padding: 20px 10px !important;
@@ -518,6 +541,17 @@ margin: 15px 0;
 		.section-services{
 			text-align: center;
 		}
+	}
+
+	@media (max-width:768px){
+		.pointers-section{
+			padding: 5px auto !important;
+			margin-right: -15px !important;
+		}
+		/* .pointers-card{
+			margin: 2px auto;
+			
+		} */
 	}
 
 		</style>
@@ -830,9 +864,9 @@ margin: 15px 0;
 								<img src="img/newimg/ICT Solutions - Our Services.png" class="img-fluid mb-4 mb-lg-0" alt="New Gen" />
 							</div>
 							<div class="col-lg-5 col-sm-12 col-12 text-left text-lg-start  appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">								
-								<div class="row justify-content-center py-2 ml-lg-3" style=" margin-right: -45px;">
+								<div class="pointers-section row justify-content-center py-2 ml-lg-3" style=" margin-right: -45px;">
 									<!-- <div class="col-lg-6"> -->
-										<div class="card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
+										<div class="pointers-card card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
 
 										<ul class="list list-icons list-icons-style-2 list-icons-lg" style="margin-bottom: 1px;">
 											<li class="line-height-3 text-3-5 mb-0">
