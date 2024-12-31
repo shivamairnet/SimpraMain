@@ -478,7 +478,7 @@
 									data-bs-target=".header-nav-main nav">
 									<i class="fas fa-bars"></i>
 								</button>
-								<div class="header-nav-features header-nav-features-no-border ps-2 order-1 order-lg-2">
+								<!-- <div class="header-nav-features header-nav-features-no-border ps-2 order-1 order-lg-2">
 									<div class="header-nav-feature header-nav-features-search d-inline-flex">
 										<a href="#" class="header-nav-features-toggle text-decoration-none"
 											data-focus="headerSearch" aria-label="Search"><i
@@ -495,7 +495,7 @@
 											</form>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -527,7 +527,7 @@
 				text-align: center; 
 				flex: 0 0 100%; 
 				order: 2;
-				margin-top: 100px;
+				margin-top: 130px;
 				max-width: 100%; /* Ensures full width on small screens */
 			">
 				<h1 class="d-flex justify-content-center text-9 mb-5" style="
@@ -539,10 +539,10 @@
 				text-align: center; /* Centered on smaller screens */
 				width: 100%;">Contact Us</h1>
 								
-							<a href="ContactUs.html"
+							<!-- <a href="ContactUs.html"
 							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
 							style="height: 40px; width: 220px; background-color: #0052CC; border: 2px solid white; color: white; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
-								class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a>					
+								class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a>					 -->
                                 <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
 		  
 							</div>
@@ -647,23 +647,24 @@
 
                                 <div class="row row-gutter-sm">
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Name" style="padding: 20px;background: #eeecec;">
+                                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Name" style="padding: 28px;background: #f8f6f6;border: none !important;">
                                     </div>
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" required placeholder="Phone Number" style="padding: 20px;background: #eeecec;">
+                                        <input type="text" value="" data-msg-required="Please enter your phone number." class="form-control" name="phone" id="phone" required placeholder="Phone Number" style="padding: 28px;background: #f8f6f6;border: none !important;"  maxlength="15" 
+										pattern="^[0-9]{10,15}$" >
                                     </div>
                                 </div>
                                 <div class="row row-gutter-sm">
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Your Email" style="padding: 20px;background: #eeecec;">
+                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Your Email" style="padding: 28px;background: #f8f6f6;border: none !important;">
                                     </div>
                                     <div class="form-group col-lg-6 mb-4">
-                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="Subject" style="padding: 20px;background: #eeecec;">
+                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="Subject" style="padding: 28px;background:#f8f6f6;border: none !important;">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-4">
-                                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" placeholder="Your Message" style="padding: 20px;background: #eeecec;"></textarea>
+                                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" placeholder="Your Message" style="padding: 28px;background: #f8f6f6;border: none !important;"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -692,7 +693,7 @@
 									</div>
 									<div class="feature-box-info line-height-2 ps-1">
 										<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
-										<strong class="text-4-5"><a href="tel:+1234567890" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
+										<strong class="text-4-5"><a href="tel:+97143948736" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
 									</div>
 								</div>
 								<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
@@ -1217,7 +1218,7 @@ function consoleText(words, id, colors) {
         const phoneNumber = document.querySelector('[placeholder="Phone Number"]').value;
 
         // Format WhatsApp URL
-        const phone = "97143948736"; // Replace with your WhatsApp number in international format (without +)
+        const phone = "+97143948736"; // Replace with your WhatsApp number in international format (without +)
         const message = `Hello, I would like to request a call back.\n\nSubject: ${encodeURIComponent(subject)}\nFull Name: ${encodeURIComponent(fullName)}\nPhone Number: ${encodeURIComponent(phoneNumber)}`;
         const whatsappURL = `https://wa.me/${phone}?text=${message}`;
 
