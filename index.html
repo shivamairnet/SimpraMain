@@ -396,6 +396,12 @@
 	}
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Converts the default white color to black */
+}
+
+
 		  </style>
 
 	</head>
@@ -614,57 +620,20 @@
 								</div>
 
 								
-							<div id="lottie-animation" style="width: 100%x; height: 300px;" class="appear-animation custom-element-wrapper custom-element-11 p-relative  text-center " data-appear-animation="fadeIn" data-appear-animation-delay="300" style="text-align: center !important;">
+							<div id="lottie-animation" style="width: 100%x; height: 300px !important;" class="appear-animation custom-element-wrapper custom-element-11 p-relative  text-center " data-appear-animation="fadeIn" data-appear-animation-delay="300" style="text-align: center !important;">
 								<img height="100px" width="300px" class="img-fluid" src="img/newimg/New folder/Home Page About Us (1).jpg" alt="">
 							</div>
 
 
 							</div>
-							<div class="col-lg-7 col-12 pt-4 mt-5 pt-lg-0 mt-lg-0">
+							<div class="col-lg-7 col-12 pt-4 mt-5 pt-lg-0 mt-lg-0" style="display: flex;flex-direction: column;justify-content: center;">
 								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
 									<!-- <p class="font-weight-medium text-4-5 line-height-5">Our dynamic team of seasoned professionals is always ready to assist with any needs that arise for your business.</p> -->
 									<!-- <p class="text-3-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
 
-									<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="cardServices">
-										<!-- Card 1 -->
-									
-										<div class="card border-radius mb-2 border-0 card-our-services-container pt-3">
-											<div class="card-header py-1" style="background-color: transparent; border: none;">
-											  <h4 class="card-title m-0 d-flex align-items-center">
-												<img src="img\MainWebsiteImages\Home Page\Innovation.svg" alt="Icon" class="me-2" style="width: 30px; height: 30px;"> <!-- Replace with your image URL -->
-												<span class="text-color-primary font-weight-semibold">Tailored Innovations</span>
-											  </h4>
-											</div>
-											<div class="card-body" style="padding: 1rem; background-color: transparent;">
-												<p class="mb-0">We are pioneers in creating personalized technological solutions that will meet businesses' particular demands and objectives, giving them the tools and approaches that are best suited to your situation.</p>
-											</div>
-										  </div>
-										  <hr>
-										<!-- Card 2 -->
-										<div class="card border-radius mb-2 border-0 card-our-services-container pt-3">
-											<div class="card-header py-1" style="background-color: transparent; border: none;">
-											  <h4 class="card-title m-0 d-flex align-items-center">
-												<img src="img\MainWebsiteImages\Home Page\Industry Experts.svg" alt="Icon" class="me-2" style="width: 30px; height: 30px;"> <!-- Replace with your image URL -->
-												<span class="text-color-primary font-weight-semibold">Industry-Leading Expertise</span>
-											  </h4>
-											</div>
-											<div class="card-body" style="padding: 1rem; background-color: transparent;">
-												<p class="mb-0">Our team of technology experts brings a wealth of experience and a deep understanding of emerging trends, and technology, ensuring that we deliver state-of-the-art solutions that keep you ahead of the curve.</p>
-											</div>
-										  </div>
-										  <hr>
-										<!-- Card 3 -->
-										<div class="card border-radius mb-2 border-0 card-our-services-container pt-3">
-											<div class="card-header py-1" style="background-color: transparent; border: none;">
-											  <h4 class="card-title m-0 d-flex align-items-center">
-												<img src="img\MainWebsiteImages\Home Page\Global Impact.svg" alt="Icon" class="me-2" style="width: 30px; height: 30px;"> <!-- Replace with your image URL -->
-												<span class="text-color-primary font-weight-semibold">Strong Global Reach</span>
-											  </h4>
-											</div>
-											<div class="card-body" style="padding: 1rem; background-color: transparent;">
-											  <p class="mb-0">With a strong international presence, we combine global insights with localized strategies to effectively address diverse market demands and drive impactful results.</p>
-											</div>
-										  </div>
+									<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="cardServices" style="display: flex;flex-direction: column;justify-content: center;">
+										<p style="font-size: 24px;line-height: normal;padding-left: 15px;padding-right: 15px;">We specialize in personalized technological solutions, leveraging our expertise and global reach to deliver cutting-edge innovations tailored to your business needs.</p>
+										
 										  
 									</div>
 								</div>
@@ -687,7 +656,7 @@
 								</div>
 								<div class="overflow-hidden mb-1">
 									<h2 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Technology</h2>
-									<h3 class="text-color-dark font-weight-bold text-7 pb-4 appear-animation text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Revolutionizing Technology with Advanced Solutions</h3>
+									<h3 class="text-color-dark font-weight-bold text-7 pb-4 appear-animation text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="font-size: 2.3em !important;">Revolutionizing Technology With <br> Advanced Solutions</h3>
 								</div>
 
 								<!-- <p class="font-weight-medium text-4-5 line-height-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non.</p> -->
@@ -701,8 +670,8 @@
 								<div class="card-body p-relative zindex-1 p-5 text-center" style="padding:1rem !important;">
 								  <div class="anim-hover-inner-translate-top-20px transition-3ms" style="margin-top: 20px;">
 									<img width="72" height="73" src="img\MainWebsiteImages\Home Page\Home Page Icons\ICT Solutions.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
-									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">ICT Solutions</h4>
-									<p class="card-text text-3-5" style="font-size: 1rem;">We develop comprehensive networking, audio-visual, security, telecommunications, and internet solutions that can be tailored in every kind of business.</p>
+									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">ICT</h4>
+									<p class="card-text text-3-5" style="font-size: 1rem;">Internet, networking, security, telecommunications & audio-visual for every business’ needs.</p>
 								  </div>
 								</div>
 							  </div>
@@ -712,8 +681,8 @@
 								<div class="card-body p-relative zindex-1 p-5 text-center" style="padding:1rem !important;">
 								  <div class="anim-hover-inner-translate-top-20px transition-3ms" style="margin-top: 20px;">
 									<img width="72" height="73" src="img\MainWebsiteImages\Home Page\Home Page Icons\Cyber Security.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
-									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">Smart Cyber Security Solutions</h4>
-									<p class="card-text text-3-5" style="font-size: 1rem;">Our Smart Cybersecurity Solutions offers cutting-edge protection against dynamic online attacks, ensuring the security of your company's data.</p>
+									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">Cyber Security</h4>
+									<p class="card-text text-3-5" style="font-size: 1rem;">From risk assessment to complete security planning, we handle every detail to keep your business secure.</p>
 								  </div>
 								</div>
 							  </div>
@@ -724,7 +693,7 @@
 								  <div class="anim-hover-inner-translate-top-20px transition-3ms" style="margin-top: 20px; ">
 									<img width="72" height="73" src="img\MainWebsiteImages\Home Page\Home Page Icons\Cloud Services.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
 									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">New Gen</h4>
-									<p class="card-text text-3-5" style="font-size: 1rem;">We provide business-class enterprise content management, intelligent business process management suites, and advanced customer communication management solutions.</p>
+									<p class="card-text text-3-5" style="font-size: 1rem;">Business class Enterprise CMS, Intelligent Business Process Management & Customer Communication Management solutions.</p>
 								  </div>
 								</div>
 							  </div>
@@ -734,8 +703,8 @@
 								<div class="card-body p-relative zindex-1 p-5 text-center" style="padding:1rem !important;">
 								  <div class="anim-hover-inner-translate-top-20px transition-3ms" style="margin-top: 20px;">
 									<img width="72" height="73" src="img\MainWebsiteImages\Home Page\Home Page Icons\Communication.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
-									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">Communication Solutions</h4>
-									<p class="card-text text-3-5" style="font-size: 1rem;">We deliver advanced communication solutions that streamline business connectivity and collaboration, providing high-speed data transfer with the latest technology.</p>
+									<h4 class="card-title mt-4 mb-2 text-5 font-weight-bold">Communication</h4>
+									<p class="card-text text-3-5" style="font-size: 1rem;">Delivering volume data at lightning fast speeds, simply by making the latest technology work.</p>
 								  </div>
 								</div>
 							  </div>
@@ -754,7 +723,7 @@
 							<hr class="bg-primary border-radius m-auto">
 						</div>
 						<div class="overflow-hidden mb-1">
-							<h3 class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+							<h3 class="font-weight-semi-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
 						</div>
 					   
 					</div>
@@ -982,7 +951,7 @@
 								</div>
 								<div class="feature-box-info line-height-2 ps-1">
 									<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
-									<strong class="text-4-5"><a href="tel:+97143948736" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8736</a></strong>
+									<strong class="text-4-5"><a href="tel:+971 43948809" class="text-color-light text-decoration-none ws-nowrap">+971 43948809</a></strong>
 								</div>
 							</div>
 							<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
@@ -1038,13 +1007,13 @@
 											<span class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
 												<span style="padding: 10px;">
 													<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-													<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="index.html">+971 4394 8736 </a>	
+													<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="index.html">+971 43948809 </a>	
 												</span>
 											</span>
 											<span class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
 												<span style="padding: 10px;">
 													<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
-													<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="mailto:info@sfgw.ae">info@sfgw.ae</a>
+													<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="mailto:info@simpra.ae">info@simpra.ae</a>
 													<!-- <a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a> -->
 												</span>
 											</span>

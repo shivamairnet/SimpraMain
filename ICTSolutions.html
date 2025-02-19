@@ -557,6 +557,101 @@ margin: 15px 0;
 		} */
 	}
 
+	.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Converts the default white color to black */
+}
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .our-offering-section {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+    }
+
+    .our-offering-section .left-content,
+    .our-offering-section .right-content {
+        width: 100% !important;
+    }
+
+    .our-offering-section .left-content img {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .our-offering-section h2 {
+        font-size: 28px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* Force icons into a single column */
+    .our-offering-section .icons-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .our-offering-section .icon-box {
+        width: 100% !important;
+        max-width: 250px !important;
+    }
+
+    .our-offering-section .icon-box img {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .our-offering-section .icon-box p {
+        font-size: 20px;
+    }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .our-offering-section {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 15px;
+    }
+
+    .our-offering-section .left-content img {
+        width: 100% !important;
+    }
+
+    .our-offering-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Ensure all divs stack in a single column */
+    .our-offering-section .icons-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    .our-offering-section .icon-box {
+        width: 100% !important;
+        max-width: 250px !important;
+        padding: 10px !important;
+    }
+
+    .our-offering-section .icon-box img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .our-offering-section .icon-box p {
+        font-size: 18px;
+    }
+
+	.icons-section{
+		display: flex !important;
+		flex-direction: column !important;
+	}
+}
+
+
 		</style>
 	</head>
 	<body>
@@ -724,10 +819,11 @@ margin: 15px 0;
 								We Possess 20+ Years Of Experience In 
 								<span id="typing-demo" class="animated-text text-decoration-underline"></span>
 							</p>	
-							<a href="ContactUs.html" class="btn btn-primary ms-1 me-2  d-xl-block  anim-hover-translate-right-5px transition-2ms"
-							style="height: 40px; width: 220px; background-color: #0052CC; border: 2px solid white; color: white; transition: background-color 0.3s, color 0.3s;">
-							Get Free Consultation <i class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i>
-						 </a>                                <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
+							
+							<a href="ContactUs.html"
+							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
+							style="height: 40px; width: 220px; background-color: #0052CC; border: 2px solid white; color: white; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
+							class="fas fa-arrow-right ms-2" style="vertical-align: middle !important;"></i></a> 
 		  
 							</div>
 						</div>
@@ -747,7 +843,7 @@ margin: 15px 0;
 						<div class="col-md-12 order-1">
 							<div class="overflow-hidden text-center">
 								<h2 class="text-color-dark font-weight-bold text-8 mb-5 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">Empowering Business Connections</h2>
-									<p class="text-5 pb-2 appear-animation text-center mt-5 line-height-5" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">We provide high-speed internet to guests, businesses, and employees with our top-tier technology, ensuring zero downtime and immediate support.</p>
+									<p class="text-5 pb-2 appear-animation text-center mt-5 line-height-5" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">We provide high-speed internet to guests, businesses, and employees with our <br> top-tier technology, ensuring zero downtime and immediate support.</p>
 								
 						</div>
 					</div>
@@ -850,71 +946,92 @@ margin: 15px 0;
 	
 
                 <!-- pointers section -->
-				<section class="bg-color-white position-relative">
+				<section class="bg-color-white position-relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
 					
 					<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation mb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
 						<hr class="bg-primary border-radius m-auto">
 					</div>
 			   
-					<h3 class="text-center font-weight-bold text-color-black  text-8 line-height-2 line-height-sm-7 mb-2 appear-animation mt-2" style="padding-top: 35px;" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Scope Of Services</h3>
-					<h2 class="text-5 pb-2 appear-animation text-center mt-5 line-height-5" data-appear-animation="maskUp" data-appear-animation-delay="100">Our scope of cybersecurity services covers the full spectrum of security needs, from SOC orchestration to </br> compliance. We are experienced in full life-cycle enterprise risk management, which includes the following:</h2>
-
-					
-					<div class="container custom-container-background z-index-1 py-2">
-						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
-							
-							<div class="col-lg-6 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
-								<img src="img/newimg/ICT Solutions - Our Services.png" class="img-fluid mb-4 mb-lg-0" alt="New Gen" />
-							</div>
-							<div class="col-lg-5 col-sm-12 col-12 text-left text-lg-start  appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">								
-								<div class="pointers-section row justify-content-center py-2 ml-lg-3" style=" margin-right: -45px;">
-									<!-- <div class="col-lg-6"> -->
-										<div class="pointers-card card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
-
-										<ul class="list list-icons list-icons-style-2 list-icons-lg" style="margin-bottom: 1px;">
+					<h3 class="text-center font-weight-bold text-color-black  text-8 line-height-2 line-height-sm-7 mb-2 appear-animation mt-2" style="padding-top: 0px;" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Scope Of Services</h3>
+					<h2 class="text-5 pb-2 text-center mt-5 mb-5 line-height-5">Our scope of cybersecurity services covers the full spectrum of security needs, from SOC orchestration to </br> compliance. We are experienced in full life-cycle enterprise risk management, which includes the following:</h2>
+<!-- 
+					<div class="section position-relative border-0 m-0 p-0" style="background-color: #0052CC;">
+						<div class="container custom-container-background z-index-1 py-5">
+							<div class="row align-items-center pb-5 pb-lg-0 mb-2 mb-lg-0"
+								style="margin-top:20px !important;margin-bottom: 50px !important;">
+		
+								
+								<div class="col-lg-5 text-left text-lg-start appear-animation nextgentext"
+									data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100"
+									style="height:auto;margin-right: 40px;">
+									<img src="img/newimg/ICT Solutions - Our Services.png"
+										height="300px !important" class="img-fluid mb-4 mb-lg-0" style="border-radius: 0 20px 20px 0;"
+										alt="New Gen" />
+								</div>
+		
+						
+								<div class="col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-center text-left mx-lg-4 px-lg-4 appear-animation nextgentext"
+									data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
+		
+									<div class="py-2">
+										<ul class="list list-icons list-icons-style-2 list-icons-lg glow-text"
+											style="list-style: none; padding: 0;">
 											<li class="line-height-3 text-3-5 mb-0">
-												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-color-dark">We are a value-added distributor and strategic system integrator, providing clients with advanced mobility, convergence, networking, and security solutions across the regions we serve.</p>
+												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-white">We are a value-added distributor and strategic system integrator, providing clients with advanced mobility, convergence, networking, and security solutions across the regions we serve.</p>
 											</li>
-										</ul>
-									</div>
-									<div class="card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
-
-										<ul class="list list-icons list-icons-style-2 list-icons-lg" style="margin-bottom: 1px;">
 											<li class="line-height-3 text-3-5 mb-0">
-												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-color-dark">Our primary objective is to deliver an exceptional client experience through the use of top-tier products and a highly skilled professional team.</p>
+												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-white">Our primary objective is to deliver an exceptional client experience through the use of top-tier products and a highly skilled professional team.</p>
 											</li>
-										</ul>
-										</div>
-										<div class="card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
-
-										<ul class="list list-icons list-icons-style-2 list-icons-lg" style="margin-bottom: 1px;">
 											<li class="line-height-3 text-3-5 mb-0">
-												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-color-dark">Our experienced team has worked with a diverse range of businesses, both in scale and across various industries.</p>
+												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-white">Our experienced team has worked with a diverse range of businesses, both in scale and across various industries.</p>
 											</li>
-										</ul>
-										</div>
-										<div class="card border-radius mb-2 border-0 card-our-services-container bg-color-quaternary">
-
-										<ul class="list list-icons list-icons-style-2 list-icons-lg"style="margin-bottom: 1px;">
 											<li class="line-height-3 text-3-5 mb-0">
-												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-color-dark">We serve major sectors including banking, military defense, government, education, financial services, hospitality, healthcare, oil and gas, and telecommunications.
+												<i class="fa-solid fa-diamond custom-diamond mr-3"></i><p class="text-white">We serve major sectors including banking, military defense, government, education, financial services, hospitality, healthcare, oil and gas, and telecommunications.
 												</p>
 											</li>
 										</ul>
-										</div>
-
-									
-									
-									
-								
+									</div>
+		
 								</div>
-	
 							</div>
 						</div>
-						
-					</div>
-	
+					</div> -->
+
 				</section>
+				<div class="our-offering-section flex flex-col items-center justify-between gap-8 p-8" style="background-color: #0052CC;display: flex;flex-direction: row;">
+					<!-- Left: Image -->
+					<div class="w-full flex justify-center" style="align-items: center;display: flex;flex-direction: row;">
+						<img src="img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg" alt="Section Image" class=" max-w-md" width="80%" style="margin: auto;padding-top: 15px;
+						padding-bottom: 15px;border-radius: 45px;height: 75%;
+						">
+					</div>
+				
+					<!-- Right: Heading and Icons -->
+					<div class="w-full flex flex-col items-center" style="justify-content: center;align-items: center;display: flex;flex-direction: column;margin-top: 15px;">
+						<!-- Heading -->
+						<h2 class="font-bold mb-6 text-center" style="color: #fff;margin-bottom: 45px;font-size: 32px;">We are experienced in full life-cycle enterprise risk management,which includes the following:</h2>
+				
+						<!-- Icons Column -->
+						<div class="icons-section" style="display: flex;justify-content: center;align-items: center;flex-direction: row;">
+							<div class="flex flex-col items-center" style="justify-content: center;align-items: center;display: flex;flex-direction: column;width: 180px;">
+								<img src="img/Simpra International Website Icons (1)/Value-Added Distribution.png" alt="Icon 1" height="60px" width="60px">
+								<p class="mt-2" style="color: white;width: 150px;line-height: normal;text-align: center;font-size: 24px;">Value-Added Distribution</p>
+							</div>
+							<div class="flex flex-col items-center" style="justify-content: center;align-items: center;flex-direction: column;display: flex;width: 180px;">
+								<img src="img/Simpra International Website Icons (1)/Advanced Tech. Solutions.png" alt="Icon 2" height="60px" width="60px">
+								<p class="mt-2" style="color: white;width: 150px;line-height: normal;text-align: center;font-size: 24px;">Advanced Tech Solutions</p>
+							</div>
+							<div class="flex flex-col items-center" style="justify-content: center;align-items: center;flex-direction: column;display: flex;width: 180px;">
+								<img src="img/Simpra International Website Icons (1)/Industry Expertise.png" alt="Icon 3" height="60px" width="60px" >
+								<p class="mt-2" style="color: white;width: 150px;line-height: normal;text-align: center;font-size: 24px;">Industry Enterprise</p>
+							</div>
+							<div class="flex flex-col items-center" style="justify-content: center;align-items: center;flex-direction: column;display: flex;width: 180px;">
+								<img src="img/Simpra International Website Icons (1)/Diverse Sector Coverage.png" alt="Icon 4" height="60px" width="60px"> 
+								<p class="mt-2" style="color: white;width: 150px;line-height: normal;text-align: center;font-size: 24px;">Diverse Sector Coverage</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 				<!-- number game section -->
@@ -978,7 +1095,7 @@ margin: 15px 0;
 					<hr class="bg-primary border-radius m-auto">
 				</div>
 				<div class="overflow-hidden mb-1">
-					<h3 class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+					<h3 class="font-weight-semi-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
 				</div>
 				<!-- <h2 class="text-color-dark font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Explore our Innovative Products</h2> -->
 
@@ -1116,7 +1233,7 @@ margin: 15px 0;
 						</div>
 						<div class="feature-box-info line-height-2 ps-1">
 							<span class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
-							<strong class="text-4-5"><a href="tel:+97143948736" class="text-color-light text-decoration-none ws-nowrap">+971 4394 8763</a></strong>
+							<strong class="text-4-5"><a href="tel:+971 43948809" class="text-color-light text-decoration-none ws-nowrap">+971 43948809</a></strong>
 						</div>
 					</div>
 					<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To Elevate Your Business?</h2>
@@ -1152,6 +1269,8 @@ margin: 15px 0;
 		</div>
 	</section>
 
+	
+
 	<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
 		<div class="container">
 			<div class="row py-5 custom-row-footer">
@@ -1170,13 +1289,13 @@ margin: 15px 0;
 									<span class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
 										<span style="padding: 10px;">
 											<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-											<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="tel:+97143948736">+971 4394 8736 </a>
+											<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="tel:+971 43948809">+971 43948809</a>
 										</span>
 									</span>
 									<span class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
 										<span style="padding: 10px;">
 											<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
-											<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="mailto:info@sfgw.ae">info@sfgw.ae</a>
+											<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="mailto:info@simpra.ae">info@simpra.ae</a>
 											<!-- <a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a> -->
 										</span>
 									</span>
@@ -1328,7 +1447,7 @@ margin: 15px 0;
 		
 			// Call the function with text content and timing
 			window.onload = function() {
-				typePhrase('typing-demo', ['ICT Solutions,', 'Cyber Security,', 'Communications'], 100, 100);
+				typePhrase('typing-demo', ['ICT Solutions', 'Cyber Security', 'Communications'], 100, 100);
 			};
 		</script>
 

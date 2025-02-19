@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Slider</title>
+</head>
+<body style=" margin: 0; font-family: Arial, sans-serif;">
+
+    <div style="height: 500px; border: 2px solid black;">helllo</div>
+    
+    <section style="overflow: hidden; position: relative; width: 100vw; height: 100vh;">
+        <div id="slider" style="display: flex; width: 300vw; height: 100vh; transition: transform 0.5s ease-in-out;">
+            <div style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+                <div style="width: 50%; height: 100%; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="width: 45%; font-size: 24px; padding: 20px;">
+                    <div class="mb-5">
+                        <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">1. Big Data Storage & Analytics</h2>
+                    </div>
+                    <ul>
+                    <li class="font-weight-small text-3-4 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">At Simpra International, we offer high-performance solutions that optimize value and efficiency by integrating cutting-edge software and hardware technologies with exclusive Big Data platforms and libraries.</li>
+                    <li class="font-weight-small text-3-4 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Our strategy makes sure that your analytics and data storage are streamlined for dependability, speed, and scalability, giving your company useful insights.</li>
+                    <li class="font-weight-small text-3-4 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on innovation and precision, we deliver tailored solutions that drive business growth and enhance decision-making capabilities across industries.</li>
+                </ul>
+                </div>
+            </div>
+            <div style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+                <div style="width: 50%; height: 100%; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="width: 45%; font-size: 24px; padding: 20px;">
+                    <div class="mb-5">
+                        <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">2. Li-Te</h2>
+                    </div>
+                    <ul>
+                    <li class="font-weight-small text-4-5 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Our Li-Te (Lawful Interception Technology) solution at Simpra International is legally approved for interception, ensuring compliance with regulatory standards.</li>
+                    <li class="font-weight-small text-4-5 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">We provide network operators of all sizes with cost-effective platforms tailored to meet law enforcement data interception requirements.</li>
+                    <li class="font-weight-small text-4-5 line-height-5 appear-animation pb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Our dynamic solutions are versatile, covering a wide range of data types, including voice, internet, and VoIP domains, ensuring comprehensive interception capabilities.</li>
+                </ul>
+                </div>
+            </div>
+            <div style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+                <div style="width: 50%; height: 100%; background-image: url('https://via.placeholder.com/600'); background-size: cover; background-position: center;"></div>
+                <div style="width: 45%; font-size: 24px; padding: 20px;">Slide 3 Content</div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+            <button onclick="prevSlide()" style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">Prev</button>
+            <button onclick="nextSlide()" style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">Next</button>
+        </div>
+
+        <!-- Slide Number Indicator -->
+        <div id="slideNumber" style="position: absolute; right: 20px; bottom: 20px; right: 20px; font-size: 18px; background: rgba(0, 0, 0, 0.7); color: white; padding: 8px 12px; border-radius: 5px;">1 / 3</div>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('#slider > div');
+        const slider = document.getElementById('slider');
+        const slideNumber = document.getElementById('slideNumber');
+
+        function updateSlide() {
+            slider.style.transform = 'translateX(' + (-currentIndex * 100) + 'vw)';
+            slideNumber.textContent = (currentIndex + 1) + " / " + slides.length;
+        }
+
+        function nextSlide() {
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener("wheel", function(event) {
+            if (event.deltaY > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        });
+    </script>
+
+    <div style="height: 500px; border: 2px solid black;">finishing</div>
+
+</body>
+</html>
