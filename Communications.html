@@ -523,20 +523,25 @@
 
 @media (min-width: 1101px) {
     #sliderSection {
-        width: 1170px !important;
+		margin: auto;
+        width: 1100px !important;
+		text-align: center;
     }
 
     #slider > div {
-        justify-content: space-around !important;
+        justify-content: center !important;
+		align-items: center;
+		margin: auto !important;
+		display: flex;
+		
     }
 
     #slider > div > div:first-child {
-        width: 50% !important;
-        /* height: 520px !important; */
+        width: 500px !important;
     }
 
     #slider > div > div:last-child {
-        width: 50% !important;
+        width: 500px !important;
         font-size: 24px !important;
     }
 }
@@ -762,8 +767,9 @@
 		</section>
 
 		<!-- slider-section -->
+		 <div style="background-color: #0052CC;">
 		<section id="sliderSection"
-			style=" position: relative; width: 1150px; height: 550px;background-color: #0052CC;color: white;margin: auto;">
+			style=" position: relative; width: 1090px; height: 550px;color: white;margin: auto;">
 			<div id="slider" class="slider-section"
 				style="display: flex; width: 100vw; height: 550px; transition: transform 0.5s ease-in-out;">
 				<div
@@ -772,9 +778,10 @@
 					align-items: center;
 					justify-content: space-between;
 					padding: 20px;
-					box-sizing: border-box;">
+					box-sizing: border-box;
+					margin: auto;">
 					<div
-						style="width: 480px; height: 520px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 480px; height: 480px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 480px; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
@@ -813,7 +820,7 @@
 					padding: 20px;
 					box-sizing: border-box;">
 					<div
-						style="width: 480px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 480px; height: 480px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 480px; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
@@ -845,7 +852,7 @@
 					padding: 20px;
 					box-sizing: border-box;">
 					<div
-						style="width: 480px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 480px; height: 480px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 480px; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
@@ -880,7 +887,7 @@
 					padding: 20px;
 					box-sizing: border-box;">
 					<div
-						style="width: 480px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 480px; height: 480px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 480px; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
@@ -919,7 +926,7 @@
 					padding: 20px;
 					box-sizing: border-box;">
 					<div
-						style="width: 480px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 480px; height: 480px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 480px; font-size: 24px; padding: 20px;height: 450px;">
 						<div class="mb-5">
@@ -955,11 +962,11 @@
 
 			<!-- Controls -->
 			<div class="controls"
-				style="position: absolute; bottom: 6%; left: 57%; transform: translateX(-50%); display: flex; gap: 10px;">
+				style="position: absolute; bottom: 6%; left: 61%; transform: translateX(-50%); display: flex; gap: 10px;">
 				<button onclick="prevSlide()"
-					style="padding: 10px 10px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8592;</button>
+					style="padding: 9px 12px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8592;</button>
 				<button onclick="nextSlide()"
-					style="padding: 10px 10px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8594;</button>
+					style="padding: 9px 12px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8594;</button>
 			</div>
 
 			<!-- Slide Number Indicator -->
@@ -967,6 +974,7 @@
 				style="position: absolute; right: 40px; bottom: 32px; font-size: 18px; color: white; padding: 8px 12px; border-radius: 5px;">
 			</div>
 		</section>
+		 </div>
 
 		<!-- our clients -->
 		<section class="desktop-section section border-0 bg-light m-0 mb-2">

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <script defer src="script.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+    <div style="position: relative; max-width: 600px; overflow: hidden; text-align: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <button id="prevBtn" style="position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; cursor: pointer; font-size: 20px; left: 10px;">&#10094;</button>
+        <div class="slide active" style="display: block;">
+            <img src="img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg" alt="Slide 1">
+           
+            <h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
+							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+							3. System Integration and
+							Software Development</h2>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Expert
+								Software
+								Development – Delivering top-tier software solutions with industry best
+								expertise.
+							</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Cutting-Edge
+								Technology – Combining innovation with in depth domain knowledge.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Seamless
+								Integration – Custom-built software solutions for optimal performance across all
+								platforms.
+							</li>
+						</ul>
+        </div>
+        <div class="slide" style="display: none;">
+            <img src="https://via.placeholder.com/600x400" alt="Slide 2">
+            <p>This is the second slide description.</p>
+        </div>
+        <div class="slide" style="display: none;">
+            <img src="https://via.placeholder.com/600x400" alt="Slide 3">
+            <p>This is the third slide description.</p>
+        </div>
+        <button id="nextBtn" style="position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; cursor: pointer; font-size: 20px; right: 10px;">&#10095;</button>
+    </div>
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    document.getElementById("nextBtn").addEventListener("click", function() {
+        slides[currentIndex].style.display = "none";
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.display = "block";
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", function() {
+        slides[currentIndex].style.display = "none";
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        slides[currentIndex].style.display = "block";
+    });
+});
+</script>
