@@ -437,82 +437,6 @@
 			filter: invert(1);
 		}
 
-		@media (max-width: 1024px) {
-			#slider {
-				width: 300vw !important;
-				/* Adjust width for tablets */
-			}
-
-			#slider>div {
-				flex-direction: column !important;
-				/* Stack content on smaller screens */
-				text-align: center !important;
-				padding: 10px !important;
-
-			}
-
-			#slider>div div:first-child {
-				width: 90% !important;
-				/* height: 250px !important; */
-			}
-
-			#slider>div div:last-child {
-				width: 100% !important;
-				font-size: 20px !important;
-			}
-
-			button {
-				padding: 8px 15px !important;
-			}
-
-			.slider-ul {
-				text-align: left !important;
-			}
-
-			.controls {
-				margin-top: 15px;
-				padding-top: 15px;
-
-			}
-		}
-
-		@media (max-width: 768px) {
-			#slider {
-				width: 300vw !important;
-				/* Adjust width for mobile */
-			}
-
-			#slider>div {
-				flex-direction: column !important;
-				text-align: center !important;
-				height: 95vh !important;
-			}
-
-			#slider>div div:first-child {
-				width: 90% !important;
-				/* height: 300px !important; */
-			}
-
-			#slider>div div:last-child {
-				width: 100% !important;
-				font-size: 18px !important;
-			}
-
-			button {
-				padding: 6px 12px !important;
-				font-size: 14px !important;
-			}
-
-			.slider-ul {
-				text-align: left !important;
-			}
-
-			.controls {
-				margin-top: 15px;
-				padding-top: 15px;
-
-			}
-		}
 
 		@media(min-width:993px) {
 			.mobile-section {
@@ -531,6 +455,92 @@
 			}
 
 		}
+
+		@media (max-width: 768px) {
+    #sliderSection {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #slider {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #slider > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    #slider > div > div:first-child {
+        width: 90%;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    #slider > div > div:last-child {
+        width: 90%;
+        font-size: 18px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .slider-ul {
+        padding: 0;
+    }
+
+    .controls {
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #sliderSection {
+        width: 100%;
+    }
+
+    #slider > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #slider > div > div:first-child {
+        width: 60%;
+        height: 350px;
+    }
+
+    #slider > div > div:last-child {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1201px) {
+    #sliderSection {
+        width: 1400px;
+    }
+
+    #slider > div {
+        justify-content: space-around;
+    }
+
+    #slider > div > div:first-child {
+        width: 600px;
+        height: 600px;
+    }
+
+    #slider > div > div:last-child {
+        width: 50%;
+        font-size: 26px;
+    }
+}
+
 	</style>
 </head>
 
@@ -742,13 +752,18 @@
 
 		<!-- slider-section -->
 		<section id="sliderSection"
-			style=" position: relative; width: 100vw; height: 100vh;background-color: #0052CC;color: white;">
+			style=" position: relative; width: 1200px; height: 550px;background-color: #0052CC;color: white;margin: auto;">
 			<div id="slider" class="slider-section"
-				style="display: flex; width: 500vw; height: 100vh; transition: transform 0.5s ease-in-out;">
+				style="display: flex; width: 100vw; height: 550px; transition: transform 0.5s ease-in-out;">
 				<div
-					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					style="flex: 0 0 100%; /* Makes each slide take up full width */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px;
+					box-sizing: border-box;">
 					<div
-						style="width: 45%; height: 450px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 520px; height: 520px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
@@ -756,21 +771,21 @@
 							1. Big Data Storage & Analytics
 						</h2>
 						<ul class="slider-ul">
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								High-Performance
 								Solutions – Integrating cutting-edge software, hardware, and Big Data platforms
 								for
 								maximum
 								value and efficiency.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Optimized
 								Analytics & Storage – Ensuring reliability, speed, and scalability for
 								actionable
 								business
 								insights.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Innovation-Driven
 								Approach – Delivering tailored solutions that enhance decision-making and drive
@@ -780,26 +795,31 @@
 					</div>
 				</div>
 				<div
-					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					style="flex: 0 0 100%; /* Makes each slide take up full width */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px;
+					box-sizing: border-box;">
 					<div
-						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 520px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
 							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
 							2. Li-Te</h2>
 						<ul class="slider-ul">
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Regulatory-Compliant Interception – Our legally approved Li-Te solution meets
 								all
 								regulatory
 								standards</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Cost-Effective &
 								Scalable – Tailored platforms for network operators of all sizes.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Comprehensive
 								Coverage – Supports interception across voice, internet, and VoIP domain.</li>
@@ -807,9 +827,14 @@
 					</div>
 				</div>
 				<div
-					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					style="flex: 0 0 100%; /* Makes each slide take up full width */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px;
+					box-sizing: border-box;">
 					<div
-						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 520px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
@@ -817,17 +842,17 @@
 							3. System Integration and
 							Software Development</h2>
 						<ul class="slider-ul">
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Expert
 								Software
 								Development – Delivering top-tier software solutions with industry best
 								expertise.
 							</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Cutting-Edge
 								Technology – Combining innovation with in depth domain knowledge.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Seamless
 								Integration – Custom-built software solutions for optimal performance across all
@@ -837,29 +862,34 @@
 					</div>
 				</div>
 				<div
-					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					style="flex: 0 0 100%; /* Makes each slide take up full width */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px;
+					box-sizing: border-box;">
 					<div
-						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 520px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
 						<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
 							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
 							4. Radius Services</h2>
 						<ul class="slider-ul">
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Decades of
 								Industry Expertise – With over 20 years of experience, Simpra and Radius
 								Services
 								are
 								trusted by telecom and law enforcement agencies.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Advanced
 								Automation Solutions – We develop fully automated, easily integrable plug-ins to
 								streamline
 								operations and reduce costs using AAA systems.</li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Optimized
 								Network
@@ -871,9 +901,14 @@
 					</div>
 				</div>
 				<div
-					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					style="flex: 0 0 100%; /* Makes each slide take up full width */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px;
+					box-sizing: border-box;">
 					<div
-						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+						style="width: 520px; height: 520px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
 					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
 						<div class="mb-5">
@@ -883,19 +918,19 @@
 							</h2>
 						</div>
 						<ul class="slider-ul">
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Comprehensive
 								Network Security – Protecting business data from cyber threats while ensuring
 								integrity and
 								reliability. </li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Critical
 								Infrastructure Protection – Implementing strict security measures to safeguard
 								essential
 								networks. </li>
-							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-2"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
 								Advanced
 								Security
@@ -909,11 +944,11 @@
 
 			<!-- Controls -->
 			<div class="controls"
-				style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+				style="position: absolute; bottom: 6%; left: 57%; transform: translateX(-50%); display: flex; gap: 10px;">
 				<button onclick="prevSlide()"
-					style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">&#8592;</button>
+					style="padding: 10px 10px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8592;</button>
 				<button onclick="nextSlide()"
-					style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">&#8594;</button>
+					style="padding: 10px 10px; background: white; color: black; border: none; cursor: pointer;border-radius: 50%;font-weight: 600;">&#8594;</button>
 			</div>
 
 			<!-- Slide Number Indicator -->
@@ -1410,28 +1445,28 @@
 			}
 		}
 
-		function disableScroll() {
-			if (!scrollingDisabled) {
-				document.body.style.overflow = 'hidden';
-				scrollingDisabled = true;
-			}
-		}
+		// function disableScroll() {
+		// 	if (!scrollingDisabled) {
+		// 		document.body.style.overflow = 'hidden';
+		// 		scrollingDisabled = true;
+		// 	}
+		// }
 
-		function enableScroll() {
-			document.body.style.overflow = 'auto';
-			scrollingDisabled = false;
-		}
+		// function enableScroll() {
+		// 	document.body.style.overflow = 'auto';
+		// 	scrollingDisabled = false;
+		// }
 
 		// Detect when user enters or leaves the slider section
-		window.addEventListener('scroll', function () {
-			const sectionTop = sliderSection.getBoundingClientRect().top;
+		// window.addEventListener('scroll', function () {
+		// 	const sectionTop = sliderSection.getBoundingClientRect().top;
 
-			if (sectionTop <= 0 && currentSlide < totalSlides - 1) {
-				disableScroll();
-			} else if (sectionTop > 0 || currentSlide === totalSlides - 1) {
-				enableScroll();
-			}
-		});
+		// 	if (sectionTop <= 0 && currentSlide < totalSlides - 1) {
+		// 		disableScroll();
+		// 	} else if (sectionTop > 0 || currentSlide === totalSlides - 1) {
+		// 		enableScroll();
+		// 	}
+		// });
 
 		updateSlideNumber();
 
