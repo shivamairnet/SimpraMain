@@ -651,8 +651,29 @@ margin: 15px 0;
 	}
 }
 
-
 		</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  gsap.from(".icons-section div", {
+    opacity: 0,
+    y: 40, // Increased initial position shift
+    duration: 2, // Increased duration from 1s to 2s
+    stagger: 0.3,
+    ease: "power2.out"
+  });
+
+  // Additional Animation: Icons Scaling Up After Appearing
+  gsap.from(".icons-section img", {
+    scale: 0.5, // Icons start at 50% size
+    duration: 2, // 2 seconds duration
+    stagger: 0.3, // Staggered effect
+    ease: "elastic.out(1, 0.5)", // Smooth bounce-like effect
+  });
+</script>
+		
+
+
 	</head>
 	<body>
 
@@ -1002,7 +1023,7 @@ margin: 15px 0;
 					<!-- Left: Image -->
 					<div class="w-full flex justify-center" style="align-items: center;display: flex;flex-direction: row;">
 						<img src="img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg" alt="Section Image" class=" max-w-md" width="80%" style="margin: auto;padding-top: 15px;
-						padding-bottom: 15px;border-radius: 45px;height: 75%;
+						padding-bottom: 15px;border-radius: 40px;height: 100%;
 						">
 					</div>
 				
@@ -1086,6 +1107,7 @@ margin: 15px 0;
 
 
 <!-- our clients -->
+ <!-- <div style="height: 350px;"> -->
 <section class="desktop-section section border-0 bg-light m-0 mb-2">
 	<div class="container py-4">
 		<div class="row justify-content-center">
@@ -1153,6 +1175,7 @@ margin: 15px 0;
 		</div>
 	</div>
 </section>
+<!-- </div> -->
 
 <!-- our clients -->
 <section class="mobile-section section border-0 bg-light m-0 mb-2 d-lg-none">
@@ -1276,9 +1299,8 @@ margin: 15px 0;
 			<div class="row py-5 custom-row-footer">
 				<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
 					<img width="100" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer" style="margin-bottom: 10px;">
-					<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
-						Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
-					
+					<p class="d-block m-0 text-color-default" style="width: 300px;">
+						Office no 3007, Tower AA1, Mazaya Business Avenue,PO. BOX: 391935. DUBAI UAE.
 						</p>
 				</div>
 				<div class="col-12 col-sm-12 col-lg-9 footer-column" >
