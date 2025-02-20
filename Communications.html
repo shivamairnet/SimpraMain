@@ -438,208 +438,206 @@
 		}
 
 		@media (max-width: 1024px) {
-            #slider {
-                width: 300vw !important;
-                /* Adjust width for tablets */
-            }
+			#slider {
+				width: 300vw !important;
+				/* Adjust width for tablets */
+			}
 
-            #slider>div {
-                flex-direction: column !important;
-                /* Stack content on smaller screens */
-                text-align: center !important;
-                padding: 10px !important;
+			#slider>div {
+				flex-direction: column !important;
+				/* Stack content on smaller screens */
+				text-align: center !important;
+				padding: 10px !important;
 
-            }
+			}
 
-            #slider>div div:first-child {
-                width: 90% !important;
-                /* height: 250px !important; */
-            }
+			#slider>div div:first-child {
+				width: 90% !important;
+				/* height: 250px !important; */
+			}
 
-            #slider>div div:last-child {
-                width: 100% !important;
-                font-size: 20px !important;
-            }
+			#slider>div div:last-child {
+				width: 100% !important;
+				font-size: 20px !important;
+			}
 
-            button {
-                padding: 8px 15px !important;
-            }
+			button {
+				padding: 8px 15px !important;
+			}
 
-            .slider-ul {
-                text-align: left !important;
-            }
+			.slider-ul {
+				text-align: left !important;
+			}
 
-            .controls {
-                margin-top: 15px;
-                padding-top: 15px;
+			.controls {
+				margin-top: 15px;
+				padding-top: 15px;
 
-            }
-        }
-
-        @media (max-width: 768px) {
-            #slider {
-                width: 300vw !important;
-                /* Adjust width for mobile */
-            }
-
-            #slider>div {
-                flex-direction: column !important;
-                text-align: center !important;
-                height: 95vh !important;
-            }
-
-            #slider>div div:first-child {
-                width: 90% !important;
-                /* height: 300px !important; */
-            }
-
-            #slider>div div:last-child {
-                width: 100% !important;
-                font-size: 18px !important;
-            }
-
-            button {
-                padding: 6px 12px !important;
-                font-size: 14px !important;
-            }
-
-            .slider-ul {
-                text-align: left !important;
-            }
-
-            .controls {
-                margin-top: 15px;
-                padding-top: 15px;
-
-            }
-        }
-
-		@media(min-width:993px){
-		.mobile-section{
-			display:none !important;
-
-		}
-	}
-
-	@media(max-width:992px){
-		.desktop-section{
-			display:none !important;
+			}
 		}
 
-		.mobile-section{
-			height: 250px !important;
-		}
-		
-	}
+		@media (max-width: 768px) {
+			#slider {
+				width: 300vw !important;
+				/* Adjust width for mobile */
+			}
 
+			#slider>div {
+				flex-direction: column !important;
+				text-align: center !important;
+				height: 95vh !important;
+			}
+
+			#slider>div div:first-child {
+				width: 90% !important;
+				/* height: 300px !important; */
+			}
+
+			#slider>div div:last-child {
+				width: 100% !important;
+				font-size: 18px !important;
+			}
+
+			button {
+				padding: 6px 12px !important;
+				font-size: 14px !important;
+			}
+
+			.slider-ul {
+				text-align: left !important;
+			}
+
+			.controls {
+				margin-top: 15px;
+				padding-top: 15px;
+
+			}
+		}
+
+		@media(min-width:993px) {
+			.mobile-section {
+				display: none !important;
+
+			}
+		}
+
+		@media(max-width:992px) {
+			.desktop-section {
+				display: none !important;
+			}
+
+			.mobile-section {
+				height: 250px !important;
+			}
+
+		}
 	</style>
 </head>
 
-<body>
 
-	<div class="body" style="font-family: Calibri, Arial, sans-serif;">
-		<header id="header" class="header-transparent"
-			data-plugin-options="{'stickyEnabled': , 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': , 'stickyChangeLogo': false, 'stickyStartAt': 53, 'stickySetTop': '-53px'};">
-			<div class="header-body border-top-0 h-auto box-shadow-none">
-				<div class="header-container header-container-height-sm container p-static">
-					<div class="header-row">
-						<div class="header-column">
-							<div class="header-row">
-								<div class="header-logo">
-									<a href="index.html" class="logo-text-container">
-										<img alt="Porto" width="70" height="65"
-											src="img/newimg/simpra-logo-transparent-1.png">
-										<span class="logo-text">Simpra</span>
-									</a>
-								</div>
+<body style="margin: 0; overflow-x: hidden; font-family: Calibri, Arial, sans-serif;">
+	<header id="header" class="header-transparent"
+		data-plugin-options="{'stickyEnabled': , 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': , 'stickyChangeLogo': false, 'stickyStartAt': 53, 'stickySetTop': '-53px'};">
+		<div class="header-body border-top-0 h-auto box-shadow-none">
+			<div class="header-container header-container-height-sm container p-static">
+				<div class="header-row">
+					<div class="header-column">
+						<div class="header-row">
+							<div class="header-logo">
+								<a href="index.html" class="logo-text-container">
+									<img alt="Porto" width="70" height="65"
+										src="img/newimg/simpra-logo-transparent-1.png">
+									<span class="logo-text">Simpra</span>
+								</a>
 							</div>
 						</div>
-						<div class="header-column justify-content-end">
-							<div class="header-row">
-								<div class="header-nav header-nav-links">
-									<div
-										class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-border-radius header-nav-main-text-capitalize header-nav-main-text-size-4 header-nav-main-arrows header-nav-main-full-width-mega-menu header-nav-main-mega-menu-bg-hover header-nav-main-effect-2">
-										<nav class="collapse">
-											<ul class="nav nav-pills" id="mainNav">
-												<li class="dropdown">
-													<a href="index.html" class="nav-link">
-														Home
-													</a>
-												</li>
-												<li>
-													<a class="nav-link" href="About Us.html">
-														About Us
-													</a>
-												</li>
-												<li class="dropdown">
-													<a class="nav-link dropdown-toggle" href="#">
-														Our Products
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a href="HivePro.html" class="dropdown-item">Hive Pro</a>
-														</li>
-														<li>
-															<a href="Altro Smart.html" class="dropdown-item">Altro
-																Smart</a>
-														</li>
+					</div>
+					<div class="header-column justify-content-end">
+						<div class="header-row">
+							<div class="header-nav header-nav-links">
+								<div
+									class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-border-radius header-nav-main-text-capitalize header-nav-main-text-size-4 header-nav-main-arrows header-nav-main-full-width-mega-menu header-nav-main-mega-menu-bg-hover header-nav-main-effect-2">
+									<nav class="collapse">
+										<ul class="nav nav-pills" id="mainNav">
+											<li class="dropdown">
+												<a href="index.html" class="nav-link">
+													Home
+												</a>
+											</li>
+											<li>
+												<a class="nav-link" href="About Us.html">
+													About Us
+												</a>
+											</li>
+											<li class="dropdown">
+												<a class="nav-link dropdown-toggle" href="#">
+													Our Products
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="HivePro.html" class="dropdown-item">Hive Pro</a>
+													</li>
+													<li>
+														<a href="Altro Smart.html" class="dropdown-item">Altro
+															Smart</a>
+													</li>
 
-													</ul>
-												</li>
-												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle active" href="#">
+												</ul>
+											</li>
+											<li class="dropdown">
+												<a class="dropdown-item dropdown-toggle active" href="#">
 
-														Our Offerings
+													Our Offerings
 
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a href="ICTSolutions.html" class="dropdown-item">ICT
-																Solutions</a>
-														</li>
-														<li>
-															<a href="Communications.html"
-																class="dropdown-item">Communications</a>
-														</li>
-														<li>
-															<a href="CyberSecurity.html" class="dropdown-item">Cyber
-																Security</a>
-														</li>
-														<li>
-															<a href="NewGen.html" class="dropdown-item">New Gen</a>
-														</li>
-													</ul>
-												</li>
-												<!-- <li>
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="ICTSolutions.html" class="dropdown-item">ICT
+															Solutions</a>
+													</li>
+													<li>
+														<a href="Communications.html"
+															class="dropdown-item">Communications</a>
+													</li>
+													<li>
+														<a href="CyberSecurity.html" class="dropdown-item">Cyber
+															Security</a>
+													</li>
+													<li>
+														<a href="NewGen.html" class="dropdown-item">New Gen</a>
+													</li>
+												</ul>
+											</li>
+											<!-- <li>
 														<a class="nav-link" href="Clients.html">
 															Our Clients
 														</a>
 														
 													</li> -->
-												<li>
-													<a class="nav-link" href="Vendors.html">
-														Vendors
-													</a>
-												</li>
-												<li>
-													<a class="nav-link" href="Industry.html">
-														Industry
-													</a>
-												</li>
-												<li>
-													<a class="nav-link" href="ContactUs.html">
-														Contact Us
-													</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
+											<li>
+												<a class="nav-link" href="Vendors.html">
+													Vendors
+												</a>
+											</li>
+											<li>
+												<a class="nav-link" href="Industry.html">
+													Industry
+												</a>
+											</li>
+											<li>
+												<a class="nav-link" href="ContactUs.html">
+													Contact Us
+												</a>
+											</li>
+										</ul>
+									</nav>
 								</div>
-								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
-									data-bs-target=".header-nav-main nav">
-									<i class="fas fa-bars"></i>
-								</button>
-								<!-- <div class="header-nav-features header-nav-features-no-border ps-2 order-1 order-lg-2">
+							</div>
+							<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+								data-bs-target=".header-nav-main nav">
+								<i class="fas fa-bars"></i>
+							</button>
+							<!-- <div class="header-nav-features header-nav-features-no-border ps-2 order-1 order-lg-2">
 										<div class="header-nav-feature header-nav-features-search d-inline-flex">
 											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search"><i class="fas fa-search header-nav-top-icon text-3"></i></a>
 											<div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
@@ -654,17 +652,16 @@
 											</div>
 										</div>
 									</div> -->
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
-		<div role="main" class="main">
+	<div role="main" class="main" style="position: relative;">
 
-
-			<section style="
+		<section style="
 				position: relative; 
 				background-color: #ffffff; 
 				padding: 50px ; 
@@ -676,9 +673,9 @@
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
 				;
 			" class="bg-color-quaternary">
-				<div class="container">
-					<div class="row py-4">
-						<div style="
+			<div class="container">
+				<div class="row py-4">
+					<div style="
 							display: flex; 
 							flex-direction: column; 
 							align-items: center; 
@@ -689,7 +686,7 @@
 							margin-top: 100px;
 							max-width: 100%; /* Ensures full width on small screens */
 						">
-							<h1 class="d-flex justify-content-center" style="
+						<h1 class="d-flex justify-content-center" style="
 								color: white; 
 								font-weight: bold; 
 								font-size: 36px; 
@@ -698,7 +695,7 @@
 								line-height: 1.2;
 								text-align: center; /* Centered on smaller screens */
 								width: 100%;"> Communications</h1>
-							<p style="
+						<p style="
 								font-weight: 500; 
 								font-size: 20px; 
 								line-height: 1.5; 
@@ -707,382 +704,369 @@
 								width: 100%;
 								color: white;
 							">
-								We Possess 20+ Years Of Experience In
-								<span id="typing-demo" class="animated-text text-decoration-underline"></span>
-							</p>
-							<a href="ContactUs.html"
-								class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
-								style="height: 40px; width: 220px; background-color: #0052CC; border: 2px solid white; color: white; transition: background-color 0.3s, color 0.3s;">Get
-								Free Consultation <i class="fas fa-arrow-right ms-2"
-									style="vertical-align: middle !important;"></i></a>
+							We Possess 20+ Years Of Experience In
+							<span id="typing-demo" class="animated-text text-decoration-underline"></span>
+						</p>
+						<a href="ContactUs.html"
+							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
+							style="height: 40px; width: 220px; background-color: #0052CC; border: 2px solid white; color: white; transition: background-color 0.3s, color 0.3s;">Get
+							Free Consultation <i class="fas fa-arrow-right ms-2"
+								style="vertical-align: middle !important;"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider divider-small divider-small-lg mt-5 text-center appear-animation"
+			data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+			<hr class="bg-primary border-radius m-auto">
+		</div>
+
+		<section class="section bg-transparent position-relative border-0 m-0 p-0 mt-5 mb-5">
+			<div class="container pt-1 pb-0 mb-0">
+				<div class="row">
+					<div class="col-md-12 order-1">
+						<div class="overflow-hidden text-center">
+							<h2 class="text-color-dark font-weight-bold text-8 mb-5 pt-0 mt-0 appear-animation"
+								data-appear-animation="maskUp" data-appear-animation-delay="300">Delivering
+								High-Speed Data with Unmatched Efficiency</h2>
+							<p class="text-5 pb-2 appear-animation text-center mt-5 line-height-5"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">Our
+								expertise in telecom security is built on a blend of industry experience and
+								cutting-edge technology.<br> As a result, we have been selected as the preferred
+								partner by numerous international<br> agencies and corporations.</p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<div class="divider divider-small divider-small-lg mt-5 text-center appear-animation"
-				data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-				<hr class="bg-primary border-radius m-auto">
-			</div>
+		</section>
 
-			<section class="section bg-transparent position-relative border-0 m-0 p-0 mt-5 mb-5">
-				<div class="container pt-1 pb-0 mb-0">
-
-					<div class="row">
-						<!-- <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-							<img src="img/newimg/New folder/Communication Image.jpg" class="img-fluid" alt="">
-						</div> -->
-						<div class="col-md-12 order-1">
-							<div class="overflow-hidden text-center">
-								<h2 class="text-color-dark font-weight-bold text-8 mb-5 pt-0 mt-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="300">Delivering
-									High-Speed Data with Unmatched Efficiency</h2>
-								<p class="text-5 pb-2 appear-animation text-center mt-5 line-height-5"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">Our
-									expertise in telecom security is built on a blend of industry experience and
-									cutting-edge technology.<br> As a result, we have been selected as the preferred
-									partner by numerous international<br> agencies and corporations.</p>
-
-							</div>
-						</div>
+		<!-- slider-section -->
+		<section id="sliderSection"
+			style=" position: relative; width: 100vw; height: 100vh;background-color: #0052CC;color: white;">
+			<div id="slider" class="slider-section"
+				style="display: flex; width: 500vw; height: 100vh; transition: transform 0.5s ease-in-out;">
+				<div
+					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					<div
+						style="width: 45%; height: 450px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
 					</div>
-
-			</section>
-
-			<!-- zigzag -->
-
-			<div class="slider-section-top">
-				<section id="sliderSection"
-					style="overflow: hidden; position: relative; width: 100vw; height: 100vh;background-color: #0052CC;color: white;">
-					<div id="slider" class="slider-section"
-						style="display: flex; width: 500vw; height: 100vh; transition: transform 0.5s ease-in-out;">
-						<div
-							style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
-							<div
-								style="width: 45%; height: 400px; border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg'); background-size: cover; background-position: center;">
-							</div>
-							<div style="width: 45%; font-size: 24px; padding: 20px;height: 450px;">
-								<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="300"
-									style="color: white;">
-									1. Big Data Storage & Analytics
-								</h2>
-								<ul class="slider-ul">
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										High-Performance
-										Solutions – Integrating cutting-edge software, hardware, and Big Data platforms
-										for
-										maximum
-										value and efficiency.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Optimized
-										Analytics & Storage – Ensuring reliability, speed, and scalability for
-										actionable
-										business
-										insights.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Innovation-Driven
-										Approach – Delivering tailored solutions that enhance decision-making and drive
-										growth
-										across industries.</li>
-								</ul>
-							</div>
-						</div>
-						<div
-							style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
-							<div
-								style="width: 45%; height: 400px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
-							</div>
-							<div style="width: 45%; font-size: 24px; padding: 20px;height: 450px;">
-								<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="300"
-									style="color: white;">
-									2. Li-Te</h2>
-								<ul class="slider-ul">
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Regulatory-Compliant Interception – Our legally approved Li-Te solution meets
-										all
-										regulatory
-										standards</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Cost-Effective &
-										Scalable – Tailored platforms for network operators of all sizes.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Comprehensive
-										Coverage – Supports interception across voice, internet, and VoIP domain.</li>
-								</ul>
-							</div>
-						</div>
-						<div
-							style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
-							<div
-								style="width: 45%; height: 400px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
-							</div>
-							<div style="width: 45%; font-size: 24px; padding: 20px;height: 450px;">
-								<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="300"
-									style="color: white;">
-									3. System Integration and
-									Software Development</h2>
-								<ul class="slider-ul">
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Expert
-										Software
-										Development – Delivering top-tier software solutions with industry best
-										expertise.
-									</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Cutting-Edge
-										Technology – Combining innovation with in depth domain knowledge.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Seamless
-										Integration – Custom-built software solutions for optimal performance across all
-										platforms.
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div
-							style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
-							<div
-								style="width: 45%; height: 400px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
-							</div>
-							<div style="width: 45%; font-size: 24px; padding: 20px;height: 450px;">
-								<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="300"
-									style="color: white;">
-									4. Radius Services</h2>
-								<ul class="slider-ul">
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Decades of
-										Industry Expertise – With over 20 years of experience, Simpra and Radius
-										Services
-										are
-										trusted by telecom and law enforcement agencies.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Advanced
-										Automation Solutions – We develop fully automated, easily integrable plug-ins to
-										streamline
-										operations and reduce costs using AAA systems.</li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Optimized
-										Network
-										Management – Our solutions enhance subscriber visibility, enabling telecom
-										operators
-										to
-										respond quickly and adapt to market demand.</li>
-								</ul>
-							</div>
-						</div>
-						<div
-							style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
-							<div
-								style="width: 45%; height: 400px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
-							</div>
-							<div style="width: 45%; font-size: 24px; padding: 20px;height: 450px;">
-								<div class="mb-5">
-									<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
-										data-appear-animation="maskUp" data-appear-animation-delay="300"
-										style="color: white;">5. Network Security Service
-									</h2>
-								</div>
-								<ul class="slider-ul">
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Comprehensive
-										Network Security – Protecting business data from cyber threats while ensuring
-										integrity and
-										reliability. </li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Critical
-										Infrastructure Protection – Implementing strict security measures to safeguard
-										essential
-										networks. </li>
-									<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-										Advanced
-										Security
-										Solutions – Utilizing cutting-edge tools and proactive mitigation techniques for
-										seamless
-										protection.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<!-- Controls -->
-					<div class="controls"
-						style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
-						<button onclick="prevSlide()"
-							style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">Prev</button>
-						<button onclick="nextSlide()"
-							style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">Next</button>
-					</div>
-
-					<!-- Slide Number Indicator -->
-					<div id="slideNumber"
-						style="position: absolute; right: 20px; bottom: 20px; font-size: 18px; color: white; padding: 8px 12px; border-radius: 5px;">
-					</div>
-				</section>
-			</div>
-
-
-			<!-- our clients -->
-			<section class="desktop-section section border-0 bg-light m-0 mb-2">
-				<div class="container py-4">
-					<div class="row justify-content-center">
-						<div class="col col-lg-9 text-center">
-
-							<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation"
-								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-								<hr class="bg-primary border-radius m-auto">
-							</div>
-							<div class="overflow-hidden mb-1">
-								<h3 class="font-weight-semi-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation"
-									data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
-							</div>
-
-						</div>
-					</div>
-					<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
-						<div class="carousel-inner text-center">
-							<div class="carousel-item active">
-								<div class="row align-items-center justify-content-center">
-									<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png"
-											alt="ADNOC" class="img-fluid" style="max-width: 90px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png"
-											alt="AL Diar" class="img-fluid" style="max-width: 140px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png"
-											alt="Dutech" class="img-fluid" style="max-width: 140px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png"
-											alt="Golden" class="img-fluid" style="max-width: 140px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png"
-											alt="IHG" class="img-fluid" style="max-width: 100px;">
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="row align-items-center justify-content-center">
-
-									<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png"
-											alt="MIllennium" class="img-fluid" style="max-width: 100px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png"
-											alt="Novotel" class="img-fluid" style="max-width: 140px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png"
-											alt="Oman" class="img-fluid" style="max-width: 100px;">
-									</div>
-									<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-										<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png"
-											alt="ooredoo" class="img-fluid" style="max-width: 100px;">
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
+						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
+							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+							1. Big Data Storage & Analytics
+						</h2>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								High-Performance
+								Solutions – Integrating cutting-edge software, hardware, and Big Data platforms
+								for
+								maximum
+								value and efficiency.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Optimized
+								Analytics & Storage – Ensuring reliability, speed, and scalability for
+								actionable
+								business
+								insights.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Innovation-Driven
+								Approach – Delivering tailored solutions that enhance decision-making and drive
+								growth
+								across industries.</li>
+						</ul>
 					</div>
 				</div>
-			</section>
+				<div
+					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					<div
+						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+					</div>
+					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
+						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
+							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+							2. Li-Te</h2>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Regulatory-Compliant Interception – Our legally approved Li-Te solution meets
+								all
+								regulatory
+								standards</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Cost-Effective &
+								Scalable – Tailored platforms for network operators of all sizes.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Comprehensive
+								Coverage – Supports interception across voice, internet, and VoIP domain.</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					<div
+						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg'); background-size: cover; background-position: center;">
+					</div>
+					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
+						<h2 class="font-weight-bold text-5 mb-3 pt-0 mt-0 appear-animation"
+							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+							3. System Integration and
+							Software Development</h2>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Expert
+								Software
+								Development – Delivering top-tier software solutions with industry best
+								expertise.
+							</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Cutting-Edge
+								Technology – Combining innovation with in depth domain knowledge.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Seamless
+								Integration – Custom-built software solutions for optimal performance across all
+								platforms.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					<div
+						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+					</div>
+					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
+						<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
+							data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+							4. Radius Services</h2>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Decades of
+								Industry Expertise – With over 20 years of experience, Simpra and Radius
+								Services
+								are
+								trusted by telecom and law enforcement agencies.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Advanced
+								Automation Solutions – We develop fully automated, easily integrable plug-ins to
+								streamline
+								operations and reduce costs using AAA systems.</li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Optimized
+								Network
+								Management – Our solutions enhance subscriber visibility, enabling telecom
+								operators
+								to
+								respond quickly and adapt to market demand.</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
+					<div
+						style="width: 45%; height: 450px;border-radius: 20px; background-image: url('img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg'); background-size: cover; background-position: center;">
+					</div>
+					<div style="width: 50%; font-size: 24px; padding: 20px;height: 450px;">
+						<div class="mb-5">
+							<h2 class="font-weight-bold text-5 mb-2 pt-0 mt-0 appear-animation"
+								data-appear-animation="maskUp" data-appear-animation-delay="300" style="color: white;">
+								5. Network Security Service
+							</h2>
+						</div>
+						<ul class="slider-ul">
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Comprehensive
+								Network Security – Protecting business data from cyber threats while ensuring
+								integrity and
+								reliability. </li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Critical
+								Infrastructure Protection – Implementing strict security measures to safeguard
+								essential
+								networks. </li>
+							<li class="font-weight-small text-2 line-height-5 appear-animation pb-3"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+								Advanced
+								Security
+								Solutions – Utilizing cutting-edge tools and proactive mitigation techniques for
+								seamless
+								protection.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-			<!-- our clients -->
-			<section class="mobile-section section border-0 bg-light m-0 mb-2 d-lg-none">
-				<div class="container py-4">
-					<div class="row justify-content-center">
-						<div class="col col-lg-9 text-center">
-							<div class="divider divider-small divider-small-lg mt-0 text-center">
-								<hr class="bg-primary border-radius m-auto">
+			<!-- Controls -->
+			<div class="controls"
+				style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+				<button onclick="prevSlide()"
+					style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">&#8592;</button>
+				<button onclick="nextSlide()"
+					style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">&#8594;</button>
+			</div>
+
+			<!-- Slide Number Indicator -->
+			<div id="slideNumber"
+				style="position: absolute; right: 20px; bottom: 20px; font-size: 18px; color: white; padding: 8px 12px; border-radius: 5px;">
+			</div>
+		</section>
+
+		<!-- our clients -->
+		<section class="desktop-section section border-0 bg-light m-0 mb-2">
+			<div class="container py-4">
+				<div class="row justify-content-center">
+					<div class="col col-lg-9 text-center">
+
+						<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation"
+							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+							<hr class="bg-primary border-radius m-auto">
+						</div>
+						<div class="overflow-hidden mb-1">
+							<h3 class="font-weight-semi-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation"
+								data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+						</div>
+
+					</div>
+				</div>
+				<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
+					<div class="carousel-inner text-center">
+						<div class="carousel-item active">
+							<div class="row align-items-center justify-content-center">
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png"
+										alt="ADNOC" class="img-fluid" style="max-width: 90px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png"
+										alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png"
+										alt="Dutech" class="img-fluid" style="max-width: 140px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png"
+										alt="Golden" class="img-fluid" style="max-width: 140px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG"
+										class="img-fluid" style="max-width: 100px;">
+								</div>
 							</div>
-							<div class="overflow-hidden mb-1">
-								<h3
-									class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0">
-									Our Clients
-								</h3>
+						</div>
+						<div class="carousel-item">
+							<div class="row align-items-center justify-content-center">
+
+								<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png"
+										alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png"
+										alt="Novotel" class="img-fluid" style="max-width: 140px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png"
+										alt="Oman" class="img-fluid" style="max-width: 100px;">
+								</div>
+								<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+									<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png"
+										alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+								</div>
 							</div>
+						</div>
+
+					</div>
+					<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- our clients -->
+		<section class="mobile-section section border-0 bg-light m-0 mb-2 d-lg-none">
+			<div class="container py-4">
+				<div class="row justify-content-center">
+					<div class="col col-lg-9 text-center">
+						<div class="divider divider-small divider-small-lg mt-0 text-center">
+							<hr class="bg-primary border-radius m-auto">
+						</div>
+						<div class="overflow-hidden mb-1">
+							<h3
+								class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0">
+								Our Clients
+							</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carousel -->
+				<div id="mobileClientsCarousel" class="carousel slide mt-4" data-bs-ride="carousel"
+					data-bs-interval="2000">
+					<div class="carousel-inner text-center">
+						<!-- First Item -->
+						<div class="carousel-item active">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ADNOC Client.png" alt="ADNOC"
+								class="img-fluid" style="max-width: 90px;">
+						</div>
+						<!-- Second Item -->
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Al Diar Hotels Client.png"
+								alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+						</div>
+						<!-- Third Item -->
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Dutech Client.png" alt="Dutech"
+								class="img-fluid" style="max-width: 170px;">
+						</div>
+						<!-- Fourth Item -->
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Golden Tulip Client.png"
+								alt="Golden" class="img-fluid" style="max-width: 180px;">
+						</div>
+						<!-- Fifth Item -->
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/IHG Client.png" alt="IHG"
+								class="img-fluid" style="max-width: 100px;">
+						</div>
+						<!-- Additional Items -->
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/MIllennium Client.png"
+								alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+						</div>
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Novotel Client.png" alt="Novotel"
+								class="img-fluid" style="max-width: 140px;">
+						</div>
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Oman Tel Client.png" alt="Oman"
+								class="img-fluid" style="max-width: 100px;">
+						</div>
+						<div class="carousel-item">
+							<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ooredoo Client.png" alt="ooredoo"
+								class="img-fluid" style="max-width: 140px;">
 						</div>
 					</div>
 
-					<!-- Carousel -->
-					<div id="mobileClientsCarousel" class="carousel slide mt-4" data-bs-ride="carousel"
-						data-bs-interval="2000">
-						<div class="carousel-inner text-center">
-							<!-- First Item -->
-							<div class="carousel-item active">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ADNOC Client.png" alt="ADNOC"
-									class="img-fluid" style="max-width: 90px;">
-							</div>
-							<!-- Second Item -->
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Al Diar Hotels Client.png"
-									alt="AL Diar" class="img-fluid" style="max-width: 140px;">
-							</div>
-							<!-- Third Item -->
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Dutech Client.png"
-									alt="Dutech" class="img-fluid" style="max-width: 170px;">
-							</div>
-							<!-- Fourth Item -->
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Golden Tulip Client.png"
-									alt="Golden" class="img-fluid" style="max-width: 180px;">
-							</div>
-							<!-- Fifth Item -->
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/IHG Client.png" alt="IHG"
-									class="img-fluid" style="max-width: 100px;">
-							</div>
-							<!-- Additional Items -->
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/MIllennium Client.png"
-									alt="MIllennium" class="img-fluid" style="max-width: 100px;">
-							</div>
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Novotel Client.png"
-									alt="Novotel" class="img-fluid" style="max-width: 140px;">
-							</div>
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/Oman Tel Client.png"
-									alt="Oman" class="img-fluid" style="max-width: 100px;">
-							</div>
-							<div class="carousel-item">
-								<img src="img/MainWebsiteImages/Home Page/Home Page Icons/ooredoo Client.png"
-									alt="ooredoo" class="img-fluid" style="max-width: 140px;">
-							</div>
-						</div>
-
-						<!-- Optional Navigation Controls (Hide for better mobile experience) -->
-						<!-- <a class="carousel-control-prev" href="#mobileClientsCarousel" role="button" data-bs-slide="prev">
+					<!-- Optional Navigation Controls (Hide for better mobile experience) -->
+					<!-- <a class="carousel-control-prev" href="#mobileClientsCarousel" role="button" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
@@ -1090,125 +1074,122 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- cta -->
+		<section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax
+			data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
+			<div class="container py-5">
+				<div class="row justify-content-center">
+					<div class="col order-1">
+						<div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0 appear-animation"
+							data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="300">
+							<div class="feature-box-icon bg-transparent">
+								<i class="icons icon-phone text-6 text-color-light"></i>
+							</div>
+							<div class="feature-box-info line-height-2 ps-1">
+								<span
+									class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL
+									US NOW</span>
+								<strong class="text-4-5"><a href="tel:+971 43948809"
+										class="text-color-light text-decoration-none ws-nowrap">+971
+										43948809</a></strong>
+							</div>
+						</div>
+						<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation"
+							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To
+							Elevate Your Business?</h2>
 					</div>
 				</div>
-			</section>
+				<div class="row justify-content-center">
+					<div class="col">
+						<div class="border-top border-color-light-5 text-light pt-4 appear-animation"
+							data-appear-animation="fadeIn" data-appear-animation-delay="300">
 
-			<!-- cta -->
-			<section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax
-				data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
-				<div class="container py-5">
-					<div class="row justify-content-center">
-						<div class="col order-1">
-							<div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0 appear-animation"
-								data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="300">
-								<div class="feature-box-icon bg-transparent">
-									<i class="icons icon-phone text-6 text-color-light"></i>
+							<div class="row align-items-center">
+								<div class="col-12 mb-3 mb-lg-0 col-lg">
+									<h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back
+									</h2>
 								</div>
-								<div class="feature-box-info line-height-2 ps-1">
-									<span
-										class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL
-										US NOW</span>
-									<strong class="text-4-5"><a href="tel:+971 43948809"
-											class="text-color-light text-decoration-none ws-nowrap">+971
-											43948809</a></strong>
+								<div class="col-12 mb-3 mb-lg-0 col-lg">
+									<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+										placeholder="Subject" aria-label="Subject">
+								</div>
+								<div class="col-12 mb-3 mb-lg-0 col-lg">
+									<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+										placeholder="Full Name" aria-label="Full Name">
+								</div>
+								<div class="col-12 mb-3 mb-lg-0 col-lg">
+									<input type="text" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+										placeholder="Phone Number" aria-label="Phone Number">
+								</div>
+								<div class="col-12 mb-3 mb-lg-0 col-lg">
+									<div class="d-grid gap-2 d-flex justify-content-center">
+										<a href="#" id="whatsappRedirect"
+											class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms">Submit
+											<i class="fas fa-arrow-right ms-2"></i></a>
+									</div>
 								</div>
 							</div>
-							<h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0 appear-animation"
-								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ready To
-								Elevate Your Business?</h2>
-						</div>
-					</div>
-					<div class="row justify-content-center">
-						<div class="col">
-							<div class="border-top border-color-light-5 text-light pt-4 appear-animation"
-								data-appear-animation="fadeIn" data-appear-animation-delay="300">
 
-								<div class="row align-items-center">
-									<div class="col-12 mb-3 mb-lg-0 col-lg">
-										<h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back
-										</h2>
-									</div>
-									<div class="col-12 mb-3 mb-lg-0 col-lg">
-										<input type="text"
-											class="form-control text-3 h-auto py-3 line-height-1 border-0"
-											placeholder="Subject" aria-label="Subject">
-									</div>
-									<div class="col-12 mb-3 mb-lg-0 col-lg">
-										<input type="text"
-											class="form-control text-3 h-auto py-3 line-height-1 border-0"
-											placeholder="Full Name" aria-label="Full Name">
-									</div>
-									<div class="col-12 mb-3 mb-lg-0 col-lg">
-										<input type="text"
-											class="form-control text-3 h-auto py-3 line-height-1 border-0"
-											placeholder="Phone Number" aria-label="Phone Number">
-									</div>
-									<div class="col-12 mb-3 mb-lg-0 col-lg">
-										<div class="d-grid gap-2 d-flex justify-content-center">
-											<a href="#" id="whatsappRedirect"
-												class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms">Submit
-												<i class="fas fa-arrow-right ms-2"></i></a>
-										</div>
-									</div>
-								</div>
-
-							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
+	</div>
 
 
-		<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
-			<div class="container">
-				<div class="row py-5 custom-row-footer">
+	<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
+		<div class="container">
+			<div class="row py-5 custom-row-footer">
+				<div
+					class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
+					<img width="100" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer"
+						style="margin-bottom: 10px;">
+					<p class="d-block m-0 text-color-default" style="width: 300px;">
+						Office no 3007, Tower AA1, Mazaya Business Avenue,
+						PO. BOX: 391935. DUBAI UAE.
+					</p>
+				</div>
+				<div class="col-12 col-sm-12 col-lg-9 footer-column">
 					<div
-						class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
-						<img width="100" height="100" src="img/newimg/simpra-logo-transparent-1.png" alt="Logo Footer"
-							style="margin-bottom: 10px;">
-						<p class="d-block m-0 text-color-default" style="width: 300px;">
-							Office no 3007, Tower AA1, Mazaya Business Avenue,
-							PO. BOX: 391935. DUBAI UAE.
-						</p>
-					</div>
-					<div class="col-12 col-sm-12 col-lg-9 footer-column">
+						class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
 						<div
-							class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
-							<div
-								class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
-								<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
-									<li class="nav-item d-inline-flex flex-column flex-lg-row">
-										<span
-											class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
-											<span style="padding: 10px;">
-												<img width="15" height="18"
-													src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-												<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none"
-													href="tel:+971 43948809">+971 43948809 </a>
-											</span>
+							class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
+							<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
+								<li class="nav-item d-inline-flex flex-column flex-lg-row">
+									<span
+										class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
+										<span style="padding: 10px;">
+											<img width="15" height="18"
+												src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+											<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none"
+												href="tel:+971 43948809">+971 43948809 </a>
 										</span>
-										<span
-											class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
-											<span style="padding: 10px;">
-												<img width="25" height="18"
-													src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
-												<a class="text-color-secondary text-color-hover-primary text-decoration-none"
-													href="mailto:info@simpra.ae">info@simpra.ae</a>
-												<!-- <a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a> -->
-											</span>
+									</span>
+									<span
+										class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
+										<span style="padding: 10px;">
+											<img width="25" height="18"
+												src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
+											<a class="text-color-secondary text-color-hover-primary text-decoration-none"
+												href="mailto:info@simpra.ae">info@simpra.ae</a>
+											<!-- <a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a> -->
 										</span>
-										<!-- <span class="footer-nav-opening-hours px-0 font-weight-normal d-flex align-items-center text-color-secondary justify-content-start mb-2 mb-lg-0">
+									</span>
+									<!-- <span class="footer-nav-opening-hours px-0 font-weight-normal d-flex align-items-center text-color-secondary justify-content-start mb-2 mb-lg-0">
 												<span>
 													<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
 												</span>
 												Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
 											</span> -->
-									</li>
-								</ul>
-								<ul class="social-icons custom-social-icons">
-									<!-- <li class="social-icons-instagram">
+								</li>
+							</ul>
+							<ul class="social-icons custom-social-icons">
+								<!-- <li class="social-icons-instagram">
 											<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
 												<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
 											</a>
@@ -1223,103 +1204,102 @@
 												<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
 											</a>
 										</li> -->
-									<li class="social-icons-linkedin">
-										<a class="custom-bg-color-light-grey"
-											href="https://www.linkedin.com/company/simpra-group" target="_blank"
-											title="LinkedIn">
-											<i
-												class="fab fa-linkedin text-5 font-weight-semibold text-color-secondary"></i>
-										</a>
-									</li>
+								<li class="social-icons-linkedin">
+									<a class="custom-bg-color-light-grey"
+										href="https://www.linkedin.com/company/simpra-group" target="_blank"
+										title="LinkedIn">
+										<i class="fab fa-linkedin text-5 font-weight-semibold text-color-secondary"></i>
+									</a>
+								</li>
 
-								</ul>
-							</div>
-							<nav class="nav-footer w-100 d-none d-lg-block">
-								<ul class="nav nav-pills justify-content-end" id="mainNav">
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="Home.html">
-											Home
-										</a>
-									</li>
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="About Us.html">
-											About Us
-										</a>
-									</li>
+							</ul>
+						</div>
+						<nav class="nav-footer w-100 d-none d-lg-block">
+							<ul class="nav nav-pills justify-content-end" id="mainNav">
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="Home.html">
+										Home
+									</a>
+								</li>
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="About Us.html">
+										About Us
+									</a>
+								</li>
 
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="HivePro.html">
-											Products
-										</a>
-									</li>
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="ICTSolutions.html">
-											Offerings
-										</a>
-									</li>
-									<!-- <li class="dropdown-secondary">
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="HivePro.html">
+										Products
+									</a>
+								</li>
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="ICTSolutions.html">
+										Offerings
+									</a>
+								</li>
+								<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
 												Our Clients
 											</a>
 										</li> -->
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="Vendors.html">
-											Vendors
-										</a>
-									</li>
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="Industry.html">
-											Industry
-										</a>
-									</li>
-									<!-- <li class="dropdown-secondary">
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="Vendors.html">
+										Vendors
+									</a>
+								</li>
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="Industry.html">
+										Industry
+									</a>
+								</li>
+								<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
 												Others
 											</a>
 										</li> -->
-									<li class="dropdown-secondary">
-										<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
-											href="ContactUs.html">
-											Contact Us
-										</a>
-									</li>
+								<li class="dropdown-secondary">
+									<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary"
+										href="ContactUs.html">
+										Contact Us
+									</a>
+								</li>
 
-									<!-- <li class="dropdown-secondary">
+								<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-blog.html">
 												Blog
 											</a>
 										</li> -->
-									<!-- <li class="dropdown-secondary">
+								<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Contact-us.html">
 												Contact Us
 											</a>
 										</li> -->
-								</ul>
-							</nav>
-						</div>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
-			<div class="footer-copyright container bg-color-quaternary">
-				<div class="row">
-					<div class="col-lg-12 text-center m-0" style="color:black">
-						<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
-						<span>Developed By :
-							<a href="https://ascentialabs.com/" style="color: #0C72B8;">
-								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Ascentia Logo (1).png"
-									alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
-							</a>
-						</span>
-					</div>
+		</div>
+		<div class="footer-copyright container bg-color-quaternary">
+			<div class="row">
+				<div class="col-lg-12 text-center m-0" style="color:black">
+					<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
+					<span>Developed By :
+						<a href="https://ascentialabs.com/" style="color: #0C72B8;">
+							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Ascentia Logo (1).png"
+								alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
+						</a>
+					</span>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 	</div>
 
 	<!-- Vendor -->
@@ -1465,7 +1445,7 @@
 			scrollCooldown = true;
 			setTimeout(() => {
 				scrollCooldown = false;
-			}, 500);
+			}, 800);
 
 			if (event.deltaY > 0) {
 				nextSlide();
