@@ -559,35 +559,35 @@
 
     /* General styles for responsiveness */
     @media (max-width: 1024px) {
-        .slide {
+        .slider-slide {
             flex-direction: column !important;
             text-align: center !important;
         }
 
-        .slide img {
+        .slider-slide img {
             max-width: 90% !important;
             height: auto !important;
         }
 
-        .slide div {
+        .slider-slide div {
             padding: 10px !important;
         }
     }
 
     @media (max-width: 768px) {
-        .slide {
+        .slider-slide {
             width: 100% !important;
         }
 
-        .slide h2 {
+        .slider-slide h2 {
             font-size: 20px !important;
         }
 
-        .slide ul {
+        .slider-slide ul {
             padding-left: 10px !important;
         }
 
-        .slide li {
+        .slider-slide li {
             font-size: 14px !important;
         }
 
@@ -824,7 +824,7 @@
 				<div class="relative-slide" style="position: relative; max-width: 950px; width: 100%; overflow: hidden; text-align: center; padding: 20px; border-radius: 10px;">
 					<button id="prevBtn" style="position: absolute; top: 50%; transform: translateY(-50%); background:none; color: white; border: none; padding: 8px; cursor: pointer; font-size: 20px; left: 0px;">&#10094;</button>
 					
-					<div class="slide active" style="display: flex; align-items: center; justify-content: space-between;width: 900px;">
+					<div class="slider-slide slide active" style="display: flex; align-items: center; justify-content: space-between;width: 900px;">
 						<div style="flex: 1; padding: 10px;">
 							<img src="img/MainWebsiteImages/Our Offering - Communication/big-data-analytics-our-offering-communication.jpg" alt="Slide 1" style="width: 100%; border-radius: 10px;">
 						</div>
@@ -861,7 +861,7 @@
 						</div>
 					</div>
 					
-					<div class="slide" style="display: none; flex; align-items: center; justify-content: space-between;">
+					<div class="slider-slide slide" style="display: none; flex; align-items: center; justify-content: space-between;">
 						<div style="flex: 1; padding: 10px;">
 							<img src="img/MainWebsiteImages/Our Offering - Communication/li-te-our-offering-communication.jpg" alt="Slide 2" style="width: 100%; border-radius: 10px;">
 						</div>
@@ -888,7 +888,7 @@
 						</div>
 					</div>
 					
-					<div class="slide" style="display: none; flex; align-items: center; justify-content: space-between;">
+					<div class="slider-slide slide" style="display: none; flex; align-items: center; justify-content: space-between;">
 						<div style="flex: 1; padding: 10px;">
 							<img src="img/MainWebsiteImages/Our Offering - Communication/software-development-ou-offering-communication.jpg" alt="Slide 3" style="width: 100%; border-radius: 10px;">
 						</div>
@@ -917,7 +917,7 @@
 									</ul>
 						</div>
 					</div>
-					<div class="slide" style="display: none; flex; align-items: center; justify-content: space-between;">
+					<div class="slider-slide slide" style="display: none; flex; align-items: center; justify-content: space-between;">
 						<div style="flex: 1; padding: 10px;">
 							<img src="img/MainWebsiteImages/Our Offering - Communication/network-security-our-offering-communication.jpg" alt="Slide 3" style="width: 100%; border-radius: 10px;">
 						</div>
@@ -949,7 +949,7 @@
 						</ul>
 						</div>
 					</div>
-					<div class="slide" style="display: none; flex; align-items: center; justify-content: space-between;">
+					<div class="slider-slide slide" style="display: none; flex; align-items: center; justify-content: space-between;">
 						<div style="flex: 1; padding: 10px;">
 							<img src="img/MainWebsiteImages/Our Offering - Communication/radius-service-our-offering-communication.jpg" alt="Slide 3" style="width: 100%; border-radius: 10px;">
 						</div>
@@ -1418,7 +1418,7 @@ document.querySelectorAll(".slide").forEach((slide, index) => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide"); // Ensure only content slides are selected
+    const slides = document.querySelectorAll(".slider-slide"); // Ensure only content slides are selected
     let currentIndex = 0;
 
     function showSlide(index) {
